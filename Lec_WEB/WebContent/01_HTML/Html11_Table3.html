@@ -2,10 +2,79 @@
 <html lang="ko">
 <!-- 이 html 문서의 기본언어는 한글입니다 -->
 <head>
+<style type="text/css">
+	table, th, td {
+    border: 1px solid black;  /* 두께, 선종류, 선색상 */
+    border-collapse: collapse; /* border 붙이기 */
+}
+
+th, td {
+	padding: 15px;	/* 셀 안쪽의 컨텐트와 border 사이 여백 */
+	text-align: center;
+}
+</style>
 <meta charset="UTF-8">
 <title>테이블 과제</title>
 </head>
 <body>
+
+
+<!-- 첫번째 과제 -->
+<table style="width: 100%;">
+	<tr>
+		<td rowspan="3" colspan="2">1</td>
+		<td colspan="3">3</td>
+	</tr>
+	
+	<tr>
+		<td colspan="3">3</td>
+	</tr>
+	
+	<tr>
+		<td>3</td>
+		<td>4</td>
+		<td>5</td>
+	</tr>
+</table>
+
+<hr>
+
+<!-- 두번째 과제 -->
+<table style="width: 100%;">
+	<tr>
+		<td rowspan="3" colspan="2">1</td>
+		<td colspan="3">3</td>
+	</tr>
+	<tr>
+		<td colspan="2">3</td>
+		<td>4</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>4</td>
+		<td>5</td>
+	</tr>
+</table>
+
+<hr>
+
+<table style="width: 100%;">
+	<tr>
+		<td>1</td>
+		<td rowspan="2" colspan="2">2</td>
+		<td rowspan="3" colspan="2">3</td>
+	</tr>
+	
+	<tr>
+		<td>1</td>
+	</tr>
+	
+	<tr>
+		<td>1</td>
+		<td>2</td>
+		<td>3</td>
+	</tr>
+</table>
 
 </body>
 </html>

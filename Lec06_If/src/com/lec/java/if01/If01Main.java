@@ -5,7 +5,7 @@ package com.lec.java.if01;
  * 
  * 구문1:
  * 	if (조건식) { !!! boolean 값이 와야한다 !!!
- *  	조건식이 true 일때 실행되는 문장(들) 
+ *  	조건식이 true 일때 실행되는 문장(들)  
  *  	...
  * 	}
  * 
@@ -17,6 +17,9 @@ package com.lec.java.if01;
  *		조건식이 false 일때 실행되는 문장(들)
  *		...
  *  }
+ *  
+ *  
+ *  
  */
 public class If01Main {
 

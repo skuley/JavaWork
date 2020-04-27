@@ -25,7 +25,7 @@ public class PhonebookManager implements Pb, Closeable {
 	PreparedStatement pstmt = null;
 	ResultSet rs = null;
 
-	// singleton 적용
+	// singleton 적 용
 	// 기본 생성자 생성 방지
 	private PhonebookManager() {
 

@@ -7,72 +7,180 @@
 		width: 80%;
 		margin: 0 auto;
 		height: 30px;
+		font-weight: bold;
 	}
 
 	table#tabl01 {
-		width: 80%;
 		border: 1px solid black;
+		border-top: 3px solid black;
+		padding: 20px;
+		margin: 0 auto;
+	}
+	
+	table#tabl01 tr.col :first-child {
+	font-weight: bold;
+	padding-right: 10px;
+	
+	}
+	
+	table#tabl02 {
+		border: 1px solid black;
+		border-top: 3px solid black;
+		width: 80%;
 		margin: 0 auto;
 		border-collapse: collapse;
 	}
 	
-	table#col1 {
-		
+	table#tabl02 td {
+		padding: 5px 30px 5px 30px;
 	}
-	
-	td{ border: 1px solid black; }
+
 </style>
 <meta charset="UTF-8">
 <title>주문 폼 작성</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 <body>
 
 <h3>주문자 정보 입력</h3>
 
 <table id="tabl01">
-	<tr id="col1">
+	<tr class="col">
 		<td>주문자정보</td>
 		<td>비회원으로 상품구매 시 반드시 본인인증을 하셔야 합니다.</td>
 		<td><button>휴대폰인증</button></td>
 		<td><button>아이핀인증</button></td>
-		<td></td>
-		<td></td>
+	</tr>
+	
+	<tr class="col">
+		<td rowspan="3" style="text-align:left; ;">주소</td>
+		<td><input type="text"><button>주소찾기</button></td>
+	</tr>
+	<tr>
+		<td><input></td>
+	</tr>
+	<tr>
+		<td><input></td>
+	</tr>
+	
+	<tr class="col">
+		<td>휴대전화</td>
+		<td colspan="2">
+		<select>
+			<option value="010">010</option>
+			<option value="011">011</option>
+			<option value="070">070</option>
+		</select>
+		-
+		<input type="number">
+		-
+		<input type="number">
+		<input type="checkbox">SMS수신동의
+		</td>
+	</tr>
+	
+	<tr class="col">
+		<td>이메일</td>
+		<td>
+			<input> @ <input>
+			<select>
+				<option>직접입력</option>
+				<option>gmail.com</option>
+				<option>naver.com</option>
+				<option>hanmail.net</option>
+			</select>
+		</td>
+	</tr>
+</table>
+
+<p style="font-size: 10px; text-align: center;" >*SK플래닛(주)는 통신판매중개자로서 통신판매의 당사자가 아니며, 
+	개별판매자가 등록한 상품정보 및 거래에 대해 SK플래닛(주)는 일체의 책임을 지지 않습니다.
+</p>
+
+<br>
+
+<h3>배송지 정보 입력</h3>
+
+<table id="tabl02">
+	<tr id=row1>
+		<td>배송지선택</td>
+		<td colspan="5"><button>주문자 정보와 동일</button></td>
+	</tr>
+	
+	<tr>
+		<td>받으시는 분</td>
+		<td colspan="5"><input type="text" size="10"></td>
 	</tr>
 	
 	<tr>
 		<td rowspan="3">주소</td>
-		<td><input type="text"><button>주소찾기</button></td>
+		<td colspan="5"><input type="text" size="10">
+		<button>주소찾기</button>
+		<input type="checkbox">배송지목록에 추가</td>
 	</tr>
 	
 	<tr>
-		<td><input></td>
+		<td colspan="5"><input type="text" size="80"></td>
 	</tr>
 	
 	<tr>
-		<td><input></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
+		<td colspan="5"><input type="text" size="80"></td>
 	</tr>
 	
 	<tr>
 		<td>휴대전화</td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
+		<td colspan="5">
+			<select style="width: 90px;">
+				<option>010</option>
+				<option>011</option>
+				<option>070</option>
+			</select>
+			-
+			<input type="number" size="10">
+			-
+			<input type="number" size="10">
+			<input type="checkbox" checked><span>안심번호 사용(무료)</span>
+			<i class="fas fa-question-circle"></i>
+			<input type="checkbox"><span>집전화 추가 입력</span>
+		</td>
 	</tr>
 	
 	<tr>
-		<td>이메일</td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
+		<td>배송시요구사항</td>
+		<td colspan="5">
+			<input type="text" size="80"><span>(0자/50자)</span><br>
+			<span style="font-size: 10px; color: blue;">*특정한 배송일을 지정하고자 할 경우 판매자와 연락하여 배송일을 확인해주시기 바랍니다.</span>
+		</td>
+		
+	</tr>
+	
+</table>
+
+<br>
+
+<table id="tabl03">
+	<tr>
+		<td>신용카드</td>
+		<td><input type="radio" name="card_payment" checked><span>신용카드(일반)</span></td>
+		<td><input type="radio" name="card_payment"><span>신용카드(법인)</span></td>
+		<td><input type="radio" name="card_payment"><span>해외발급카드</span></td>
+	</tr>
+	
+	<tr>
+		<td>현금결제</td>
+		<td><input type="radio" name="cash_payment"><span>무통장입금</span></td>
+		<td><input type="radio" name="cash_payment"><span>실시간계좌이체</span></td>
+	</tr>
+	
+	<tr>
+		<td>카드 선택</td>
+		<td><select>
+			<option>선택하세요</option>
+			<option>신한카드</option>
+			<option>국민카드</option>
+			<option></option>
+		</select></td>
 	</tr>
 </table>
 

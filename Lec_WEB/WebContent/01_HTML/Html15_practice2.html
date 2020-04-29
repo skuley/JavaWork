@@ -4,8 +4,183 @@
 <head>
 <meta charset="UTF-8">
 <title>캘린더 폼 작성</title>
+<style type="text/css">
+	ul#headerMenu {
+		width: 100%;
+		list-style-type: none;
+		overflow: hidden;
+		background-color: lightgrey;
+		margin: 0 auto;
+		padding-inline-start: 0px;
+	}
+	
+	ul#headerMenu li {
+		width: 25%;
+		float: left;
+		background-color: lightgrey;
+		padding: 16px 0px;
+		text-align: center;
+	}
+	
+	ul#headerMenu li:hover {
+		background-color: blue;
+
+	}	
+	
+	ul#headerMenu li a:visited {
+		background-color: blue;
+	}
+	
+	a:hover {
+		color: white;
+	}
+	
+	a {
+		text-decoration: none;
+		color: black;
+		font-size: 20px;
+		font-weight: bold;
+	}
+	
+	h1 {
+		text-align: center;
+		color: blue;
+		font-weight: bold;
+	}
+	
+	span {
+		font-size: 20px;
+	}
+	
+	table#tablCal {
+		width: 100%;
+		border: 1px solid black;
+		border-collapse: collapse;
+	}
+	
+	table#tablCal td {
+		border: 1px solid black;
+		height: 50px;
+		text-align: center;
+		font-weight: bold;
+	}
+	
+	
+	
+	table#tablCal td:hover {
+		background-color: blue;
+		color: white;
+	}
+	
+	table#tablCal td#firstCol {
+		text-align: left;
+		border-left: 10px;
+		background-color: white;
+		color: black;
+	}
+	
+	table#tablCal td.na {
+		background-color: white;
+	}
+	
+	table#tablCal tr:nth-child(2) td {
+		background-color: lightgrey;
+		color: black;
+		
+}
+	
+</style>
 </head>
 <body>
+
+<ul id="headerMenu">
+	<li><a href="#">정책차림표</a></li>
+	<li><a href="#">미리보는 지원사업</a></li>
+	<li><a href="#">마감입박 지원사업</a></li>
+	<li><a href="#">접수중인 지원사업</a></li>
+</ul>
+
+<br>
+
+<h1>&lt;2020-04&gt;</h2>
+
+<br>
+
+<table id="tablCal">
+
+  <tr>
+    <td colspan="7" id="firstCol">
+    	<input type="radio" name="dept"><span>전체</span>
+    	<input type="radio" name="dept"><span>창업 · 벤처</span>
+    	<input type="radio" name="dept"><span>소상공인</span>
+    	<input type="radio" name="dept"><span>판로 · 수출</span>
+    	<input type="radio" name="dept"><span>R&D</span>
+    	<input type="radio" name="dept"><span>금융 · 세제</span>
+    	<input type="radio" name="dept"><span>인력</span>
+    </td>
+  </tr>
+  
+  <tr>
+    <td><span>일</span></td>
+    <td><span>월</span></td>
+    <td><span>화</span></td>
+    <td><span>수</span></td>
+    <td><span>목</span></td>
+    <td><span>금</span></td>
+    <td><span>토</span></td>
+  </tr>
+  
+  <tr>
+    <td class="na"><span></span></td>
+    <td class="na"><span></span></td>
+    <td class="na"><span></span></td>
+    <td><span>1</span></td>
+    <td><span>2</span></td>
+    <td><span>3</span></td>
+    <td><span>4</span></td>
+  </tr>
+  
+  <tr>
+    <td><span>5</span></td>
+    <td><span>6</span></td>
+    <td><span>7</span></td>
+    <td><span>8</span></td>
+    <td><span>9</span></td>
+    <td><span>10</span></td>
+    <td><span>11</span></td>
+  </tr>
+  
+  <tr>
+    <td><span>12</span></td>
+    <td><span>13</span></td>
+    <td><span>14</span></td>
+    <td><span>15</span></td>
+    <td><span>16</span></td>
+    <td><span>17</span></td>
+    <td><span>18</span></td>
+  </tr>
+  
+  <tr>
+    <td><span>19</span></td>
+    <td><span>20</span></td>
+    <td><span>21</span></td>
+    <td><span>22</span></td>
+    <td><span>23</span></td>
+    <td><span>24</span></td>
+    <td><span>25</span></td>
+  </tr>
+  
+  <tr>
+    <td><span>26</span></td>
+    <td><span>27</span></td>
+    <td><span>28</span></td>
+    <td><span>29</span></td>
+    <td><span>30</span></td>
+    <td class="na"></td>
+    <td class="na"></td>
+  </tr>
+</table>
+
 
 </body>
 </html>

@@ -15,6 +15,7 @@ Border: padding 을 감싸는 테두리
 Margin : border 의 바깥 영역  (다른 element 와의 간격)
 
 
+
 element 의 '전체 width / height' 구하는 공식
 
 	element 의 전체 width = 
@@ -27,11 +28,11 @@ element 의 '전체 width / height' 구하는 공식
 <style>
 
 div#demo1 {
-	background-color: lightgrey; /* content, padding 영역까지 */
-	width: 300px; /* width 는 Contents 영역의 너비 */
-	border: 25px solid green; /* 테두리 */
-	padding: 25px; /* content 와 border 사이 간격*/
-	margin: 25px; /* border 와 다른 element 사이 간격 (외부 여백) */
+	background-color: lightgrey; /* content, padding 영역 까지 */
+	width: 300px;   /* content 영역의 너비 */
+	border: 25px solid green;  /* 테두리 */
+	padding: 25px;  /* content ↔ border 사이 간격(내부여백)*/
+	margin: 25px;   /* border ↔  다른 element 사이 간격 (외부 여백)*/
 }
 
 div.demo2 {

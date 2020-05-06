@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .clear {
+            clear: both;
+        }
+
+        * {
+            box-sizing: border-box;
+            /* RWD 필수 */ 
+        }
+
+        /* - 기본 스타일 mobile first */
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+            width: 100%;
+            border: 5px solid white;
+        }
+
+        div.a {
+            width: 33.33%;
+        }
+
+        .dp-none {
+            display: none;
+        }
+
+        .dp-height {
+            height: 200px;
+        }
+
+        /* - 600px 이하: tablet version*/
+        @media screen and (min-width: 600px) {
+
+            .dp-none {
+                display: block;
+            }
+
+            /* Tablet */
+            .col-t-1 {
+                width: 8.33%;
+            }
+
+            div.a{
+                width:16.66%;
+            }
+
+            div#e, div#f {
+                height: 150px;
+            }
+
+            div#c {
+                height: 300px;
+            }
+
+            div#g{
+                width:25%;
+            }
+
+            /* 1칸 짜리 폭 */
+            .col-t-2 {
+                width: 16.66%;
+            }
+
+            /* 2칸 짜리 폭 */
+            .col-t-3 {
+                width: 25%;
+            }
+
+            .col-t-4 {
+                width: 33.33%;
+            }
+
+            .col-t-5 {
+                width: 41.66%;
+            }
+
+            .col-t-6 {
+                width: 50%;
+            }
+
+            .col-t-7 {
+                width: 58.33%;
+            }
+
+            .col-t-8 {
+                width: 66.66%;
+                height: 300px;
+            }
+
+            .col-t-9 {
+                width: 75%;
+            }
+
+            .col-t-10 {
+                width: 83.33%;
+            }
+
+            .col-t-11 {
+                width: 91.66%;
+            }
+
+            .col-t-12 {
+                width: 100%;
+            }
+        }
+
+        /* - 768px 이하 : pc version */
+        @media screen and (min-width: 768px) {
+
+            .col-1 {
+                width: 8.33%;
+            }
+
+            /* 1칸 짜리 폭 */
+            .col-2 {
+                width: 16.66%;
+            }
+
+            /* 2칸 짜리 폭 */
+            .col-3 {
+                width: 25%;
+            }
+
+            .col-4 {
+                width: 33.33%;
+            }
+
+            .col-5 {
+                width: 41.66%;
+            }
+
+            .col-6 {
+                width: 50%;
+            }
+
+            .col-7 {
+                width: 58.33%;
+            }
+
+            .col-8 {
+                width: 66.66%;
+            }
+
+            .col-9 {
+                width: 75%;
+            }
+
+            .col-10 {
+                width: 83.33%;
+            }
+
+            .col-11 {
+                width: 91.66%;
+            }
+
+            .col-12 {
+                width: 100%;
+            }
+
+            div#e, div#f, div#g {
+                width: 33.33%;
+                height: 100px;
+            }
+
+
+        }
+
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="dp-none col-t-2 col-4" style="background-color: gray;">a</div>
+    <div class="col-t-10 col-8" style="background-color: purple;">b</div>
+    <div id="c" class="col-t-2 col-2" style="background-color: cyan;">c</div>
+    <div class="dp-height col-t-8 col-6" style="background-color: honeydew;">d</div>
+    <div id="e" class="a col-t-2 col-4" style="background-color: beige;">e</div>
+    <div id="f" class="a col-t-2 col-4" style="background-color: orange;">f</div>
+    <div id="g" class="a col-t-3 col-4" style="background-color: peachpuff;">g</div>
+    <div class="col-t-9 col-12" style="background-color: peru;">h</div>
+
+</body>
+
+</html>

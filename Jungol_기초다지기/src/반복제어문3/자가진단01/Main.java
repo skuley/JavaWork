@@ -13,9 +13,7 @@ public class Main {
 		int result = 0;
 		int count = 0;
 		
-		do {
-			
-		} while (result >= n);
+		System.out.println("adffd");
 		
 
 	}

@@ -13,15 +13,28 @@ div.static {
 div.relative {
 	border: 3px solid orangered;
 	width: 400px;
+<<<<<<< HEAD
 	position: relative;
 	left: 30px;  /* 왼쪽으로부터 -> */
 	/*right: 30px;*/   /* 오늘쪽으로부터 <- */
 	/* top: 30px; */  /* 위에서부터 ↓ */
 	/*bottom: 30px;*/     /* 아래서부터 ↑ */
+=======
+	position: relative; /* 상대적 위치로 상대적이다 */
+	left: 30px; /* 왼쪽으로부터 30px 이동 -> */
+	/*right: -30px; /* 오른쪽으로부터 30px 이동 <- */
+	/* 양의 방향은 Box 안쪽, 음의 방향은 반대 Box 바깥쪽 */
+	/*top: 30px; /* 위에서부터 내려옴 */
+	/* bottom: 30px; /* 아래서부터 위방향 */
+>>>>>>> branch 'master' of https://github.com/skuley/JavaWork.git
 }
 
 div.fixed {
+<<<<<<< HEAD
 	border: 3px solid blue;
+=======
+	border: 3px solid yellow;
+>>>>>>> branch 'master' of https://github.com/skuley/JavaWork.git
 	width: 300px;
 	position: fixed;
 	bottom: 0px;
@@ -29,12 +42,22 @@ div.fixed {
 }
 
 div.absolute {
+<<<<<<< HEAD
 	border: 3px solid orchid;
 	width: 200px;
 	height: 100px;
 	position: absolute;
 	top: 40px;
 	right: 20px;
+=======
+	border: 3px solid blue;
+	width: 200px;
+	height: 100px;
+	position: absolute; /* 부모쪽에서 빠져 나온듯한  */
+	top: 40px;
+	right: 20px;
+	
+>>>>>>> branch 'master' of https://github.com/skuley/JavaWork.git
 }
 </style>
 
@@ -75,14 +98,18 @@ div.absolute {
 <!--  부모가 relative, fixed, absolute 인 경우 -->
 <!-- TODO -->
 <div class="relative">부모1-relative
+<<<<<<< HEAD
 	<div class="absolute">absolute1</div>
+=======
+	<div class="absolute">absolute1</div> <!-- 지정 안해줐으니까 static -->
+>>>>>>> branch 'master' of https://github.com/skuley/JavaWork.git
 </div>
 
 <br>
 <!-- 부모가 static 인 경우 -->
 <!-- TODO -->
-<div class="">부모2-static
-	<div class="absolute">absolute2</div>
+<div class="static">부모2-static
+	<div class="absolute">absolute2</div> <!-- 지정 안해줐으니까 static -->
 </div>
 
 <br><hr>

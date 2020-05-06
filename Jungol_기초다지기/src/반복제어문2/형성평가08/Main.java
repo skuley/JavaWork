@@ -16,16 +16,16 @@ public class Main {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		int column, row;
-		
-		column = sc.nextInt();
-		row = sc.nextInt();
+		int column = sc.nextInt();
+		int row = sc.nextInt();
 		
 		for(int i = 1; i <= column; i++) {
-			for(int j = 1; j <= row; j += i) {
-				System.out.println();
+			for(int j = 1; j <= row; j++) {
+				System.out.print((i * j) + " ");
 			}
+			System.out.println();
 		}
-	}
+		
+	} // main
 
-}
+} // Main

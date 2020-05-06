@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emmet</title>
+</head>
+
+<body>
+    
+    <div id="header"></div>
+
+    <div id="header"></div>
+    <div class="page"></div>
+    <div id="footer"></div>
+
+    td[title="hello world"]
+    <td title="hello world"></td>
+
+    td[colspan=2 rowspan=3]
+    <td colspan="2" rowspan="3"></td>
+
+    ul>li*5
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+    <ul>
+        <li class="item"></li>
+        <li class="item"></li>
+        <li class="item"></li>
+        <li class="item"></li>
+        <li class="item"></li>
+    </ul>
+
+    <!-- 넘버링이 붙는다 --> ul>li.item$*5
+    <ul>
+        <li class="item1"></li>
+        <li class="item2"></li>
+        <li class="item3"></li>
+        <li class="item4"></li>
+        <li class="item5"></li>
+    </ul>
+
+    ul>li.item$$$*5
+    <ul>
+        <li class="item001"></li>
+        <li class="item002"></li>
+        <li class="item003"></li>
+        <li class="item004"></li>
+        <li class="item005"></li>
+    </ul>
+
+    ul>li.item$$$@777*5 <!-- 시작하는 숫자를 지정해줄수 있다. (base number) -->
+    <ul>
+        <li class="item777"></li>
+        <li class="item778"></li>
+        <li class="item779"></li>
+        <li class="item780"></li>
+        <li class="item781"></li>
+    </ul>
+
+    a{클릭}
+    <a href="">클릭</a>
+    p{문단입니다}
+    <p>문단입니다</p>
+    div{div 입니다}
+    <div>div 입니다</div>
+
+    a{click}+b{here}
+    <a href="">click</a><b>here</b>
+
+    a>{click}+b{here}
+    <a href="">click<b>here</b></a>
+
+    p>{click}+a{here}+{to continue}
+    <p>
+        click
+        <a href="">here</a>
+        to continue
+    </p>
+
+    <p>click</p>
+    <a href="">here</a>to continue
+
+    ul#nav>(li{Hello World}>span.info)+(li>span.info)+li*2
+    <ul id="nav">
+        <li>Hello World<span class="info"></span></li>
+        <li><span class="info"></span></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+    <ul id="nav">
+        <li>Hello World <span class="info"></span></li>
+        <li><span class="info"></span></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+    ul>lorem10*4
+    <ul>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, assumenda.</li>
+        <li>Ex voluptatibus in ipsum mollitia distinctio impedit maiores, ipsam sapiente.</li>
+        <li>Ratione est iusto beatae quidem delectus in quos, commodi sit.</li>
+        <li>Ut quaerat aspernatur possimus doloremque dolores quae eum quod eos?</li>
+    </ul>
+
+
+</body>
+
+</html>

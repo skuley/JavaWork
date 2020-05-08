@@ -28,10 +28,3 @@ var a = 10 // 변수 a 선언하고 정수값 10 대입
 // 앞으로 특정한 목적을 위해 사용할 가능성
 // https://webplatform.github.io/docs/javascript/future_reserved_words/
 // 사용할수 없게 해놓았다.
-
-
-
-
-
-
-

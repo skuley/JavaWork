@@ -136,7 +136,7 @@ console.log('\n<number>');
     d *= 2;
     console.log('d = ', d, typeof d);
 
-    d = parseFloat('300'); // '3.14' ->  3으로 형변환
+    d = parseFloat('300.5599155'); // '3.14' ->  3으로 형변환
     console.log('d = ', d, typeof d);
 
     num1 = 100;
@@ -193,6 +193,8 @@ console.log('\n<string>');
     console.log("a" < "b");
     console.log("abc" < "abd");
     console.log("AAaa" > "AaAa");
+    console.log();
+    
 
 }
 

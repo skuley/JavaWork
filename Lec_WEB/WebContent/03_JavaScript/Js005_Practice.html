@@ -20,7 +20,39 @@ table{
 
 <script>
 
-// TODO
+document.write(typeof x + "<br>");
+document.write("x.items.length : ", x.items.length + "<br>");
+
+document.write(x.items.length + "개의 매물이 있습니다.<br>");
+
+document.write(x.items[0].title + "<br>")
+document.write(x.items[0].item.title + "<br>")
+document.write(x.items[0].item.rent + "<br>")
+document.write(x.items[0].item.deposit + "<br><br>")
+
+document.write(x.items.length + "개의 매물이 있습니다")
+
+document.write("<table>\n");
+
+document.write("<tr>\n")
+document.write("<th>" + "No" + "</td>")
+document.write("<th>" + "타이틀" + "</td>")
+document.write("<th>" + "월세" + "</td>")
+document.write("<th>" + "보증금" + "</td>")
+document.write("</tr>\n")
+
+for(i = 0; i < x.items.length; i++){
+	document.write("<tr>\n")
+		document.write("<td>" + (i + 1) + "</td>")
+		document.write("<td>" + x.items[i].item.title + "</td>")
+		document.write("<td>" + x.items[i].item.rent + "</td>")
+		document.write("<td>" + x.items[i].item.deposit + "</td>")
+	document.write("</tr>\n")
+}
+
+
+
+document.write("</table>\n");
 
 </script>
 

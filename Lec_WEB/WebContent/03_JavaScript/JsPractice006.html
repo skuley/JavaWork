@@ -18,15 +18,15 @@ function chkSubmit(){
     var check = document.getElementsByName("check");
     var cnt = 0;
     for(i = 0; i < check.length; i++){
-        if(check[i].checked == true){
-            cnt++;
-        }
-        if(cnt < 3){
-            alert(cnt);
+        if(!check[i].checked){
+            alert("모든 항목에 동의하셔야 합니다");
+            check[i].focus();
             return;
         }
+        
     }
-    frm.submit();
+    // frm.submit();
+    alert("성공!");
 }
 
 </script>

@@ -22,7 +22,38 @@ table{
 <body>
 <script>
 
-// TODO
+// 1 ~ 10 난수 뽑기
+var n = Math.floor(Math.random() * 10) + 1;
+
+document.write("n: " + n + "<br>");
+
+document.write("<ol>\n")
+
+for(i = 0; i < n; i++){
+	document.write("<li>안녕하세요 " + (i + 1) + "번째 입니다.")
+}
+
+document.write("</ol>\n")	
+
+// 랜덤 테이블 만들기
+var row = Math.floor(Math.random() * 10) + 1;
+var col = Math.floor(Math.random() * 10) + 1;
+
+document.write("<p>row:" + row + "행" + col + "열" + "</p>");
+
+
+document.write("<table>\n")
+
+for(i = 0; i < row; i++){
+		document.write("<tr>\n")
+	for(j = 0; j < col; j++){
+		document.write("<td>" + (i + 1) + "행" + (j + 1) + "열" + "</td>\n");
+	}
+	document.write("</tr>\n")
+}
+
+document.write("</table>\n")
+
 
 </script>
 

@@ -75,9 +75,17 @@ function myMove() {
 	var elem = document.getElementById('animate');
   var pos = 0;
 
+  var id = setInterval(frame, 5);
+
   // JS는 함수 안에서 함수를 만들수 있따.
   function frame(){
-    
+    if(pos == 350){
+      clearInterval(id);
+    } else{
+      pos++;
+      elem.style.top = pos + "px";
+      elem.style.left = pos + "px";
+    }
   }
 
 }

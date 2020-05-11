@@ -1,0 +1,64 @@
+body {
+    font-family: sans-serif, ;
+}
+
+div {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+#header {
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid black;
+
+}
+
+div#logo img {
+    width: 200px;
+    height: 90px;
+    border: 1px solid black;
+    margin: 0;
+    margin-left: 100px;
+}
+
+
+hr {
+    border: 1px solid #01acc8;
+    margin: 0;
+    padding: 0;
+}
+
+div#top_menu {
+    float: right;
+    border: 1px solid black;
+}
+
+div#top_menu ul {
+    list-style-type: none;
+
+}
+
+div#top_menu ul li {
+    display: inline;
+    padding: 10px;
+    font-size: 20px;
+    background-color: #01acc8;
+    margin: 0;
+}
+
+div#top_menu ul li:hover {
+    background-color: #4ccbdf;
+}
+
+div#top_menu ul li a:active{
+    color: white;
+}
+
+.clear {
+    clear: both;
+}

@@ -32,53 +32,64 @@ css(property, value) - css 값 변경
 $(document).ready(function(){
 	// 1. Get
     $("#btn11").click(function(){
-        alert("text(): " /* TODO */);
+        alert("text(): " + $("#test1").text());
     });
     $("#btn12").click(function(){
-        alert("html(): " /* TODO */);
+        alert("html(): " + $("#test1").html());
     });
     $("#btn13").click(function(){
-        alert("val(): " /* TODO */);
+        alert("val(): " + $("#test2").val());
     });
     $("#btn14").click(function(){
-        alert("attr():" /* TODO */);
+        alert("attr(): " + $("#test3").attr("href"));
     });
     $("#btn15").click(function(){
-        alert("css():" /* TODO */);
+        // alert("css():" + $("#test1").css("color"));
 
-        // TODO
+        // alert("css():" + $("#test1").css("color") + " "
+        //                 + $("#test1").css("background-color"));
         
         // 한꺼번에 여러가지 css 값을 읽어 올수도 있다
         
-        // TODO
+        var cssObj = $("#test1").css(["color", "backgroundColor"]);
+        alert("css(): " + cssObj.color + " " + cssObj.backgroundColor);
+
     });
 
     // 2. Set
     // 매개변수를 주면 값을 변경할수 있다.
     $("#btn21").click(function(){
-        // TODO
+        $("#test1").text("test1: Hello World!");
     });
     $("#btn22").click(function(){
-        // TODO
+        $("#test1").html("test1: Hello <b>World!</b>");
     });
     $("#btn23").click(function(){
-        // TODO
+        $("#test2").val("Donald Trump");
     });
 
     $("#btn24").click(function(){
-        // TODO
+        $("#test3").attr("href", "https://www.jQuery.com");
+        // $("#test3").text("jQuery");
+
         
         // 한꺼번에 여러 attribute 변경 가능
         // href 와 title 변경하기
-        // TODO
+        $("#test3").attr({
+            href : "http://www.daum.net"
+            , title : "다음"
+        })
     });
     $("#btn25").click(function(){
     	
-    	// TODO
+    	$("#test1").css("color", "red");
     	
     	// 한꺼번에 여러 CSS 변경 가능
     	// 글자색 --> white ,   배경색 -->  gray
-    	// TODO
+    	$("#test1").css({
+            color : "white"
+            , backgroundColor: "gray"
+        });
     });
     
     
@@ -142,7 +153,6 @@ $(document).ready(function(){
 <hr>
 
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </body>
 </html>
 

@@ -53,12 +53,22 @@ $(document).ready(function(){
 	// #btn06 을 click() 하면  #d06 이
 	// 1. 오른쪽으로 100px 이동하고,  width 는 200px 로 'slow' 하게 변하기
 	// 2. 글자크기가 fontSize   3em 로 'slow' 하게 커지기  
-	// TODO
+	$("#btn06").click(function(){
+		var div = $("div#d06");
+		div.animate({left: '100px', width: '200px'}, "slow");
+		div.animate({fontSize: '3em'}, "slow");
+	});
 	
+	// jquery, animate에서  color css는 안먹힌다
     
     // jQuery 의 모든 '액션'에 관한 메소드는 method chainging 이 된다.
-    // $(selector).action()
-	// TODO
+    // $(selector).action().action().action()...
+	$("#btn07").click(function(){
+		$("div#d07").css("color", "red")
+					.slideUp(2000)
+					.slideDown(2000);
+
+	});
 	
 });
      

@@ -29,15 +29,24 @@ jQuery 는 이를 간단히 구현하는 함수들 제공
 
 $(document).ready(function(){
     $("#btn01").click(function(){
-        // TODO
+        $("h1, h2, p").addClass("blue");
+        $("div#d01").addClass("important");
+        // 동시에 복수개 클래스 추가 가능
+        $("div#d02").addClass("important blue");
     });
     
     $("#btn02").click(function(){
-    	// TODO
+    	$("h1, h2, p").removeClass("blue");
+        $("div#d01").removeClass("important");
+        // 동시에 복수개 클래스 추가 가능
+        $("div#d02").removeClass("important blue");
     });
     
     $("#btn03").click(function(){
-        // TODO
+        $("h1, h2, p").toggleClass("blue");
+        $("div#d01").toggleClass("important");
+        // 동시에 복수개 클래스 추가 가능
+        $("div#d02").toggleClass("important");
     });
 });
 </script>
@@ -58,7 +67,6 @@ $(document).ready(function(){
 <button id="btn02">btn02 removeClass()</button>
 <button id="btn03">btn03 toggleClass()</button>
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </body>
 </html>
 

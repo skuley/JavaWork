@@ -14,8 +14,6 @@ a {
 #header {
     width: 80%;
     margin: 0 auto;
-    /* border: 1px solid black; */
-
 }
 
 /* 로그인 / 회원가입 */
@@ -37,56 +35,80 @@ div#account_info span a:hover {
 div#logo img {
     width: 200px;
     height: 77px;
-    /* border: 1px solid black; */
     margin: 0;
     margin-left: 100px;
 }
 
 
 hr {
-    border: 2px solid #01acc8;
+    border: 3px solid #01acc8;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     margin: 0;
     padding: 0;
 }
 
 /* 메뉴 */
-div#top_menu {
-    /* float: right;
-    border: 1px solid black;
-    background-color: #01acc8;
-    border-radius: 10px 10px 0 0;
-    margin: 0;
-    padding: 0; */
-}
 
 div#top_menu ul {
     float: right;
-    background-color: #01acc8;
-    border-radius: 10px 10px 0 0;
     margin: 0;
-    padding: 10px 0;
     list-style-type: none;
     cursor: pointer;
+    bottom: 0;
 }
 
-div#top_menu ul.drop_down {
-    display: none;
+div#top_menu ul li.dropdown {
+    background-color: #01acc8;
+    border-radius: 10px 10px 0 0;
+    padding: 8px 50px;
+    font-size: 15px;
+    font-weight: bold;
+    float: left;
+    border-right: 1px solid #ccc;
+    position: relative;
 }
 
-div#top_menu ul:hover > ul.drop_down {
+div#top_menu ul li.dropdown:last-child {
+    border-right: none;
+}
+
+div#top_menu ul li.dropdown:hover {
+    background-color: #00b7d3;
+}
+
+ul.dropdown-content {
+    float: left;
+    left: 0;
+}
+
+div#top_menu ul li.dropdown div.dropdown-content ul.dropdown-content-wrapper li {
+    border: 1px solid black;
+    width: 100%;
+    padding: 10px 0px;
+    
+}
+
+div#top_menu ul li.dropdown ul.dropdown-content li {
+    width: 100%;
+    border: 1px solid black;
+}
+
+div#dropdown-content-wrapper {
+    width: 100%;
+    position: absolute;
+}
+
+div#top_menu ul li.dropdown:hover .dropdown-content {
     display: block;
 }
 
-div#top_menu ul li {
-    display: inline;
-    padding: 0 50px;
-    font-size: 15px;
-    font-weight: bold;
-    border-right: 1px solid #cccccc;
+div#top_menu ul li.dropdown:active {
+    background-color: #00b2ce;
 }
 
-div#top_menu ul li:last-child {
-    border-right: none;
+div#top_menu ul li.dropdown .dropdown-content {
+    display: none;
 }
 
 div#top_menu li a {
@@ -96,6 +118,7 @@ div#top_menu li a {
 div#top_menu ul li:hover a {
     color: red;
     font-weight: bold;
+
 }
 
 div#top_menu ul li:hover #top_menu {
@@ -106,7 +129,7 @@ div#top_menu ul li:hover #top_menu {
     clear: both;
 }
 
-div#main_img{
+div#main_img {
     background-image: url(../img/kids.jpg);
     background-repeat: no-repeat;
     background-position: center center;
@@ -155,7 +178,7 @@ table#goli_info tr:nth-child(2) td {
     font-size: 80px;
 }
 
-div#mission{
+div#mission {
     margin-top: 15px;
     width: 80%;
     margin: 0 auto;
@@ -181,11 +204,10 @@ div#mission div#mission_txt {
     height: 360px;
 }
 
-div#mission div#mission_txt h2{
+div#mission div#mission_txt h2 {
     font-size: 40px;
     color: red;
     margin-bottom: 5px;
 }
 
-div#mission div#mission_txt p{
-}
+div#mission div#mission_txt p {}

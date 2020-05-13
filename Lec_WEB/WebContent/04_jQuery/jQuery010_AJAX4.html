@@ -62,8 +62,8 @@ function getAddr(){
 			, confmKey : $("#form").find('[name="confmKey"]').val()
 			, keyword : $("#form").find('[name="keyword"]').val()
 		}
-		, dataType : "jsonp" // cross-domain 문제(JSON with Padding)
-		, crossDomain : true
+		, dataType : "jsonp" 
+		, crossDomain : true // cross-domain 문제(JSON with Padding)
 		, success : function(xmlStr){
 			$("#list").html("");
 			makeList(xmlStr.returnXml); // jsonp api를 가져왔기 때문에 xml 파싱 형태로 리턴해줘야한다

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="id02" class="modal">
+        <form class="modal-content">
+            <span>&times;</span>
+            <div class="container">
+                <label for="name">이름</label>
+                <input type="text" name="name" placeholder="이름">
+                <span id="name-req"></span>
+                <label for="birthdate">생년월일</label>
+                <input type="text" name="birthdate" id="datepicker2">
+            </div>
+        </form>
+    </div>
+
+    <script>
+
+$(document).ready(function(){
+  $(function() {
+  $( "#datepicker2" ).datepicker({
+    dateFormat: 'yy.mm.dd',
+    prevText: '이전 달',
+    nextText: '다음 달',
+    monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
+    monthNamesShort: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
+    dayNames: ['일','월','화','수','목','금','토'],
+    dayNamesShort: ['일','월','화','수','목','금','토'],
+    dayNamesMin: ['일','월','화','수','목','금','토'],
+    showMonthAfterYear: true,
+    changeMonth: true,
+    changeYear: true,
+    yearSuffix: '년'
+  });
+});
+
+
+
+})
+    
+    
+    </script>
+
+</body>
+
+</html>

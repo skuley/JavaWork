@@ -1,6 +1,12 @@
-var login = $("#account_info a");
-var modelBg = $(".model_bg");
-
-login.on("click", function(){
-    modelBg.classList.add('bg_active');
-})
+$(document).ready(function(){
+    // loging popup & popdown
+    $('#login').on('click', function(){
+        $('.modal').css("display", "block");
+    })
+    $(".cancelbtn").on('click', function(){
+        $('.modal').css("display", "none");
+    })
+    $(".close").on('click', function(){
+        $('.modal').css("display", "none");
+    })
+});

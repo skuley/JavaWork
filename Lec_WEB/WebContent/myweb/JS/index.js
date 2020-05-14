@@ -1,5 +1,6 @@
-$(document).ready(function(){
-    $(".dropdown").on("hover", function(){
-        $(".dropdown-content").animate({"display" : "block"}, 2000)
-    })
+var login = $("#account_info a");
+var modelBg = $(".model_bg");
+
+login.on("click", function(){
+    modelBg.classList.add('bg-active');
 })

@@ -1,11 +1,10 @@
+#main {
+    height: 100%;
+}
 span {
     font-family: 'Nanum Gothic', sans-serif;
 }
 
-div {
-    margin: 0;
-    padding: 0;
-}
 
 body{
     margin: 0;
@@ -49,7 +48,14 @@ hr {
     border: 3px solid #01acc8;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    margin: 0.4px;
+    margin: 0px;
+    padding: 0;
+}
+
+hr.hr-flip {
+    border: 3px solid #01acc8;
+    border-radius: 0 0 5px 5px;
+    margin: 0px;
     padding: 0;
 }
 
@@ -72,7 +78,6 @@ hr {
     width: 30%;
     margin: 0 auto;
     border-radius: 10px;
-    position: relative;
 }
 
 .close {
@@ -158,6 +163,7 @@ button[type=submit], button.cancelbtn {
 .navbar a {
     float: left;
     font-size: 16px;
+    font-weight: bold;
     color: white;
     text-align: center;
     padding: 10px 20px;
@@ -178,6 +184,7 @@ button[type=submit], button.cancelbtn {
 
 .subnav .subnavbtn {
     font-size: 16px;
+    font-weight: bold;
     border: none;
     border-radius: 10px 10px 0 0;
     outline: none;
@@ -210,11 +217,10 @@ button[type=submit], button.cancelbtn {
 }
 
 .subnav-content a {
-    /* float: right; */
     color: white;
     text-decoration: none;
     width: 12%;
-    padding-top: 20px;
+    padding-top: 30px;
 }
 
 .subnav-content a:hover{
@@ -225,7 +231,7 @@ button[type=submit], button.cancelbtn {
 
 .subnav:hover .subnav-content {
     display: block;
-    transform: translateY(0);
+    transition: 1s;
   }
 
 
@@ -234,15 +240,16 @@ button[type=submit], button.cancelbtn {
 }
 
 /* Hero-Image */
-.hero-image {
+.hero-img {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/kids.jpg");
-    height: 500px;
+    height: 50%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
+    height: 500px;
+    margin-top: 0;
   }
-  
+
   .hero-txt {
     text-align: center;
     position: absolute;
@@ -250,62 +257,33 @@ button[type=submit], button.cancelbtn {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+    text-shadow: 2px 2px 2px gray;
   }
 
-/* Article Title */
-div#main_img {
-    background-image: url(../img/kids.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    /* height: 400px; */
-}
+  .hero-txt h1 {
+      font-size: 60px;
+      font-style: italic;
+  }
 
-div#main_img .img_title {
-    color: red;
-    text-align: center;
-    border: 1px solid black;
-    position: relative;
-}
-
-div#main_img .title {
-    position: absolute;
-    font-size: 60px;
-    font-style: italic;
-    border: 1px solid red;
-    font-weight: bold;
-    text-shadow: 0, 0, 15px #fff;
-    text-align: center;
-}
-
-div#main_img .descrip {
-    position: absolute;
-    font-size: 20px;
-    padding: 50px;
-    font-weight: bold;
-    font-style: italic;
-    text-shadow: 0, 0, 15px white;
-    text-align: center;
-    border: 1px solid blue;
-}
-
+  .hero-txt p {
+      margin: 5px;
+      font-size: 15px;
+      font-style: italic;
+  }
 
 /* Important Information */
 div#important_info {
     width: 100%;
-    padding: 20px 0;
-    margin-top: 20px;
+    margin-top: 80px;
 }
 
 table#goli_info {
-    width: 70%;
+    width: 50%;
     margin: 0 auto;
 }
 
 table#goli_info tr th {
-    font-size: 20px;
+    font-size: 30px;
 }
 
 
@@ -317,36 +295,195 @@ table#goli_info tr:nth-child(2) td {
 }
 
 /* Mission */
-
 div#mission {
-    margin-top: 15px;
-    width: 80%;
-    margin: 0 auto;
-    height: 360px;
-    padding: 20px 0;
+    margin-top: 80px;
+    width: 70%;
+    margin: 80px  auto;
+    /* border: 1px solid black; */
+    /* background-color:rgb(1, 172, 200); */
+    position: relative;
 }
 
 div#mission #iframe {
-    float: left;
-
+    border: none;
+    position: relative;
 }
 
-div#mission #iframe iframe {
-    width: 600px;
-    height: 360px;
-    border: 0px;
+div#mission iframe {
+    float: left;
+    width: 700px;
+    height: 400px;
 }
 
 div#mission div#mission_txt {
     text-align: center;
+    border: 1px solid blue;
     float: right;
-    height: 360px;
+    position: absolute;
+    right: 1.5%;
+    top: 15%;
+    
 }
 
+/* TODO */
 div#mission div#mission_txt h2 {
     font-size: 40px;
     color: #d60036;
-    margin-bottom: 5px;
+    padding: 5px;
+    /* border: 1px solid black; */
 }
 
-div#mission div#mission_txt p {}
+div#mission div#mission_txt h3 {
+    /* border: 1px solid black; */
+}
+
+div#mission div#mission_txt p {
+    /* border: 1px solid black; */
+}
+
+div.indent {
+    height: 20px;
+    background-color: white;
+    overflow: visible;
+    top: 10px;
+    border-radius: 10px;
+}
+
+div.indent2 {
+    height: 20px;
+    background-color: white;
+    overflow: visible;
+    bottom: 10px;
+    border-radius: 10px;
+}
+
+/* Parallax */
+div.parallax {
+    /* margin-top: 80px; */
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://themify.me/demo/themes/builder-layouts/files/2017/08/bw-girl-3.jpg");
+    min-height: 310px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    /* border-radius: 10px; */
+    overflow: hidden;
+}
+
+div.parallax-content {
+    text-align: center;
+    margin-top: 110px;
+}
+
+div.parallax-content p {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: 1px 1px 1px gray;
+}
+
+/* Traing Visits and Missions */
+div.training-visits {
+    width: 80%;
+    margin: 80px auto;
+    /* border: 1px solid black; */
+    text-align: center;
+}
+
+div.training-visits h2 {
+    font-size: 40px;
+    color: #d60036;
+    padding: 15px;
+}
+
+div.training-visits-content {
+    float: left;
+    /* border: 1px solid black; */
+    /* outline: 1px solid black; */
+    width: 33.33%;
+    padding: 20px 0;
+}
+
+div.training-visits-content img{
+transition: 0.3s;
+}
+
+div.training-visits-content img:hover {
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+div.training-visits-content span a{
+    display: block;
+    padding: 30px;
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+div.training-visits-content span a:hover {
+    color: #d60036;
+}
+
+/* Footer */
+
+div.footer {
+    width: 100%;
+    min-height: auto;
+    background-color: #01acc8;
+    border-radius: 10px 10px 0 0;
+}
+
+.footer svg {
+    color: white;
+    margin: 0 auto;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+.footer .sns svg {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer svg:hover {
+    color: #d60036;
+    transition: 0.5s;
+}
+
+.footer .sns {
+    text-align: center;
+    padding: 20px 0;
+}
+
+div.footer-info {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    color: white;
+}
+
+div.contact, div.quick-link {
+    float: left;
+    width: 50%;
+    text-align: center;
+    padding: 0;
+}
+
+div.contact span, div.quick-link span {
+    display: inline-block;
+    outline: 1px solid black;
+}
+
+div.copyright{
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0px;
+    color: white;
+    font-weight: bold;
+}
+
+

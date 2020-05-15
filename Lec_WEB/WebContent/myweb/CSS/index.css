@@ -5,6 +5,14 @@ span {
     font-family: 'Nanum Gothic', sans-serif;
 }
 
+ul {
+    list-style-type: none;
+}
+
+a{
+    color: white;
+    font-weight: bold;
+}
 
 body{
     margin: 0;
@@ -45,7 +53,7 @@ div#logo img {
 
 
 hr {
-    border: 3px solid #01acc8;
+    border: 5px solid #01acc8;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     margin: 0px;
@@ -53,7 +61,7 @@ hr {
 }
 
 hr.hr-flip {
-    border: 3px solid #01acc8;
+    border: 5px solid #01acc8;
     border-radius: 0 0 5px 5px;
     margin: 0px;
     padding: 0;
@@ -306,7 +314,7 @@ div#mission {
 
 div#mission #iframe {
     border: none;
-    position: relative;
+    position: absolute;
 }
 
 div#mission iframe {
@@ -429,10 +437,10 @@ div.training-visits-content span a:hover {
 /* Footer */
 
 div.footer {
-    width: 100%;
-    min-height: auto;
-    background-color: #01acc8;
-    border-radius: 10px 10px 0 0;
+    background-image: url("https://www.giftoflifeinternational.org/wp-content/themes/gift_of_life/assets/images/footer-bg.png");
+    background-size: cover;
+    margin-top: -150px;
+    padding-top: 400px;
 }
 
 .footer svg {
@@ -453,6 +461,11 @@ div.footer {
     transition: 0.5s;
 }
 
+.footer-info span:hover {
+    cursor: pointer;
+    color: #d60036;
+} 
+
 .footer .sns {
     text-align: center;
     padding: 20px 0;
@@ -463,24 +476,43 @@ div.footer-info {
     margin: 0 auto;
     position: relative;
     color: white;
+    /* border: 1px solid black; */
 }
 
 div.contact, div.quick-link {
     float: left;
-    width: 50%;
+    /* width: 50%; */
     text-align: center;
     padding: 0;
+    display: block;
+    position: relative;
 }
 
-div.contact span, div.quick-link span {
-    display: inline-block;
-    outline: 1px solid black;
+div.contact ul, div.quick-link ul {
+    float: left;
+    /* border: 1px solid black; */
+    padding: 20px;
+    width: 200px;
+}
+
+div.contact li, div.quick-link li {
+    padding: 10px;
+}
+
+div.contact li:hover a, div.quick-link li:hover a {
+    color: #d60036;
+    transition: 0.5s;
+}
+
+div.contact li:first-child:hover, div.quick-link li:first-child:hover {
+    border-bottom: 2px solid white;
+    position: relative;
 }
 
 div.copyright{
-    padding: 20px 0;
+    /* padding: 20px 0; */
     text-align: center;
-    position: relative;
+    position: absolute;
     bottom: 0px;
     color: white;
     font-weight: bold;

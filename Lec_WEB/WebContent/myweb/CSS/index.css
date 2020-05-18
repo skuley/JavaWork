@@ -334,58 +334,34 @@ table#goli_info tr:nth-child(2) td {
 }
 
 /* Mission */
-div#mission {
-    margin-top: 80px;
+div.mission {
     width: 70%;
-    margin: 80px  auto;
     /* border: 1px solid black; */
-    /* background-color:rgb(1, 172, 200); */
+    margin: 150px auto;
+    text-align: center;
     position: relative;
+    min-height: 500px;
 }
 
-div#mission #iframe {
-    border: none;
-    position: absolute;
-}
-
-div#mission iframe {
+div.mission .iframe {
     float: left;
-    width: 700px;
+}
+
+div.iframe iframe {
+    width: 750px;
     height: 400px;
 }
 
-div#mission div#mission_txt {
-    text-align: center;
-    border: 1px solid blue;
-    float: right;
-    position: absolute;
-    right: 1.5%;
-    top: 15%;
-    
+div.mission-txt {
+    /* border: 5px solid black; */
+    float: left;
+    margin: 80px 0 0 200px;
 }
 
-/* TODO */
-div#mission div#mission_txt h2 {
-    font-size: 40px;
+div.mission-txt h2{
     color: #d60036;
-    padding: 5px;
-    /* border: 1px solid black; */
-}
-
-div.indent {
-    height: 20px;
-    background-color: white;
-    overflow: visible;
-    top: 10px;
-    border-radius: 10px;
-}
-
-div.indent2 {
-    height: 20px;
-    background-color: white;
-    overflow: visible;
-    bottom: 10px;
-    border-radius: 10px;
+    font-size: 40px;
+    font-weight: bold;
 }
 
 /* Parallax */
@@ -422,6 +398,11 @@ div.training-visits {
     position: relative;
 }
 
+div.tvm-content {
+    margin: 0 auto;
+    /* border: 1px solid black; */
+}
+
 div.training-visits h2 {
     font-size: 40px;
     color: #d60036;
@@ -432,11 +413,11 @@ div.training-visits h2 {
 div.training-visits-content {
     float: left;
     /* border: 1px solid black; */
-    outline: 1px solid black;
-    width: 20%;
-    padding: 0px 0;
-    margin: 0 auto;
-    position: relative;
+    /* outline: 1px solid black; */
+    width: 33.33%;
+    /* padding: 0px 0; */
+    margin: 100px auto;
+    /* position: relative; */
     /* background-color: yellow; */
 }
 

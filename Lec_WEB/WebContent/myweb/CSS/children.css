@@ -1,0 +1,52 @@
+.accordion {
+    background-color: #eee;
+    color: #d60036;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.active,
+.accordion:hover {
+    background-color: #ccc;
+}
+
+div.article {
+    border: 5px solid blue;
+}
+
+div.panel {
+    padding: 100px 300px;
+    border: 3px solid red;
+    max-height: 1000px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+div.article-accordion .panel ul {
+    /* display: inline; */
+    /* border: 1px solid black; */
+    width: 300px;
+    float: left;
+    max-height: 300px;
+    overflow: auto;
+
+}
+
+div.panel li {
+    font-size: 20px;
+    padding: 20px;
+}
+
+div.panel h2 {
+    border-bottom: 1px solid black;
+}
+
+h2[아] {
+    border: 1px solid blue;
+}

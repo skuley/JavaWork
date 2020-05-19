@@ -13,9 +13,17 @@ public class Main {
 		int result = 0;
 		int count = 0;
 		
-		System.out.println("adffd");
-		
+		for(int i = 1; i <= n; i++) {
+			if(i % 2 == 1) {
+				result += i;
+				count++;
+			}
+			if(result >= n) {
+				System.out.printf("%d %d", count, result);
+				break;
+			}
+		}
 
-	}
+	} // main
 
-}
+} // Main

@@ -4,9 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>sub</title>
 </head>
 <body>
-
+<h4>현재 페이지는 sub 페이지 입니다.</h4>
 </body>
 </html>

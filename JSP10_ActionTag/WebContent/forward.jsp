@@ -4,9 +4,12 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>forward</title>
 </head>
 <body>
-
+<!-- Action Tag -->
+<h3>지금의 페이지는 forward 페이지 입니다.</h3>
+<jsp:forward page="sub.jsp"/>
+<p>위 라인의 내용은 sub 페이지의 내용입니다</p>
 </body>
 </html>

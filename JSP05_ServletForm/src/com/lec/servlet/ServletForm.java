@@ -89,7 +89,6 @@ public class ServletForm extends HttpServlet {
 		Map<String, String[]> paramMap = request.getParameterMap();
 		for (String key : paramMap.keySet()) {
 			System.out.println(key + " : " + Arrays.toString(paramMap.get(key)));
-			
 		}
 	}
 

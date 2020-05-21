@@ -6,6 +6,21 @@
 <% // parameter 받아오기
 	int uid = Integer.parseInt(request.getParameter("uid"));
 	// ★ 이단계에서 parameter 검증 필요 ★
+	
+	int curPage = 1; // 현재 페이지 (디폴트 1 page)
+
+	// 현재 몇 페이지인지 parameter 받아오기 + 검증
+	String pageParam = request.getParameter("page");
+	if (pageParam != null && !pageParam.trim().equals("")) {
+		try {
+			// 1이상의 자연수 이어야 한다
+			int p = Integer.parseInt(pageParam);
+			if (p > 0)
+				curPage = p;
+		} catch (NumberFormatException e) {
+			// page parameter 오류는 별도의 exception 처리 안함 
+		}
+	} // end if
 %>
 
 <%! 
@@ -116,6 +131,7 @@ function chkSubmit(){
 <h2>수정</h2>
 <form name="frm" action="updateOk.jsp" method="post" onsubmit="return chkSubmit()">
 <input type="hidden" name="uid" value="<%= uid %>"/>
+<input type="hidden" name="page" value="<%= curPage %>"/>
 작성자 : <%= name %><br> <%-- 작성자 이름 변경 불가 --%>
 제목 : 
 <input type="text" name="subject" value="<%= subject %>"/><br>
@@ -125,7 +141,7 @@ function chkSubmit(){
 <input type="submit" value="수정"/>
 </form>
 <button onclick="history.back()">이전으로</button>
-<button onclick="location.href='list.jsp'">목록보기</button>
+<button onclick="location.href='list.jsp?page=<%=curPage%>'">목록보기</button>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </body>

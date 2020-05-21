@@ -11,6 +11,20 @@
 	String content = request.getParameter("content");
 	// 이단계에서 parameter 검증 필요
 	
+	int curPage = 1; // 현재 페이지 (디폴트 1 page)
+
+	// 현재 몇 페이지인지 parameter 받아오기 + 검증
+	String pageParam = request.getParameter("page");
+	if (pageParam != null && !pageParam.trim().equals("")) {
+		try {
+			// 1이상의 자연수 이어야 한다
+			int p = Integer.parseInt(pageParam);
+			if (p > 0)
+				curPage = p;
+		} catch (NumberFormatException e) {
+			// page parameter 오류는 별도의 exception 처리 안함 
+		}
+	} // end if
 
 %>
 
@@ -75,7 +89,7 @@
 <% } else { %>
 	<script type="text/javascript">
 		alert('수정 성공');
-		location.href = "view.jsp?uid=<%= uid %>";
+		location.href = "view.jsp?uid=<%= uid %>&page=<%=curPage%>";
 	</script>
 <% } %>
 

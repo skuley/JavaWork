@@ -10,7 +10,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.command.write.Command;
+import com.command.write.DeleteCommand;
 import com.command.write.ListCommand;
+import com.command.write.SelectCommand;
+import com.command.write.UpdateCommand;
+import com.command.write.ViewCommand;
+import com.command.write.WriteCommand;
 
 /**
  * Servlet implementation class WriteController
@@ -63,6 +68,35 @@ public class WriteController extends HttpServlet {
 			viewPage = "write.jsp";
 			break;
 			
+		case "/writeOk.do":
+			command = new WriteCommand();
+			command.execute(request, response);
+			viewPage = "writeOk.jsp";
+			break;
+			
+		case "/view.do":
+			command = new ViewCommand();
+			command.execute(request, response);
+			viewPage = "view.jsp";
+			break;
+			
+		case "/update.do":
+			command = new SelectCommand();
+			command.execute(request, response);
+			viewPage = "update.jsp";
+			break;
+			
+		case "/updateOk.do":
+			command = new UpdateCommand();
+			command.execute(request, response);
+			viewPage = "updateOk.jsp";
+			break;
+			
+		case "/deleteOk.do":
+			command = new DeleteCommand();
+			command.execute(request, response);
+			viewPage = "deleteOk.jsp";
+			break;
 
 		default:
 			break;

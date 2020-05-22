@@ -1,15 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ page import="com.lec.beans.*" %>
-<jsp:useBean id="dao" class="com.lec.beans.WriteDAO"/>
-
-<% // parameter 받아오기
-	int uid = Integer.parseInt(request.getParameter("uid"));
-	// ★ 이단계에서 parameter 검증 필요 ★
-%>
 
 <% // DAO 사용한 트랜잭션
-	WriteDTO arr[] = dao.selectByUid(uid);
+	WriteDTO arr[] = (WriteDTO[])request.getAttribute("update");
 %>
 <%
 	if (arr == null || arr.length == 0) {
@@ -26,6 +20,7 @@
 
 %>
 <%
+	int uid = arr[0].getUid();
 	String name = arr[0].getName();
 	String subject = arr[0].getSubject();
 	String content = arr[0].getContent();
@@ -55,7 +50,7 @@ function chkSubmit(){
 </script>
 <body>
 <h2>수정</h2>
-<form name="frm" action="updateOk.jsp" method="post" onsubmit="return chkSubmit()">
+<form name="frm" action="updateOk.do" method="post" onsubmit="return chkSubmit()">
 <input type="hidden" name="uid" value="<%= uid %>"/>
 작성자 : <%= name %><br> <%-- 작성자 이름 변경 불가 --%>
 제목 : 
@@ -66,7 +61,7 @@ function chkSubmit(){
 <input type="submit" value="수정"/>
 </form>
 <button onclick="history.back()">이전으로</button>
-<button onclick="location.href='list.jsp'">목록보기</button>
+<button onclick="location.href='list.do'">목록보기</button>
 
 </body>
 </html>

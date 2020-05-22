@@ -1,17 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ page import="com.lec.beans.*"%>
-<jsp:useBean id="dao" class="com.lec.beans.WriteDAO" />
+
 
 <%
-	// parameter 받아오기
-	int uid = Integer.parseInt(request.getParameter("uid"));
-	// ★ 이단계에서 parameter 검증 필요 ★
-%>
-
-<%
-	// dao 사용한 트랜잭션
-	WriteDTO[] arr = dao.readByUid(uid);
+	WriteDTO[] arr = (WriteDTO[])request.getAttribute("view");
 %>
 
 <%
@@ -29,6 +22,7 @@
 
 %>
 <%
+	int uid = arr[0].getUid();
 	String name = arr[0].getName();
 	String subject = arr[0].getSubject();
 	String content = arr[0].getContent();
@@ -50,7 +44,7 @@ function chkDelete(uid) {
 	// 삭제 여부, 다시 확인 하고 진행하기
 	var r = confirm('삭제하시겠습니까?');
 	if(r){
-		location.href = "deleteOk.jsp?uid=" + uid;
+		location.href = "deleteOk.do?uid=" + uid;
 	}
 }
 </script>
@@ -73,10 +67,10 @@ function chkDelete(uid) {
 	</div>
 	<hr>
 	<br>
-	<button onclick="location.href='update.jsp?uid=<%=uid%>'">수정하기</button>
-	<button onclick="location.href='list.jsp'">목록보기</button>
+	<button onclick="location.href='update.do?uid=<%=uid%>'">수정하기</button>
+	<button onclick="location.href='list.do'">목록보기</button>
 	<button onclick="chkDelete(<%=uid%>)">삭제하기</button>
-	<button onclick="location.href='write.jsp'">신규등록</button>
+	<button onclick="location.href='write.do'">신규등록</button>
 
 
 </body>

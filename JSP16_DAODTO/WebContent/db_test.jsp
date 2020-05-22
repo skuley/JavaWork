@@ -2,27 +2,6 @@
     pageEncoding="UTF-8"%>
 <%@ page import="java.sql.*" %> <!-- JDBC 관련 import -->
 
-<% // parameter 받아오기
-
-	int uid = Integer.parseInt(request.getParameter("uid"));
-	// 이단계에서 parameter 검증 필요
-	
-	int curPage = 1; // 현재 페이지 (디폴트 1 page)
-
-	// 현재 몇 페이지인지 parameter 받아오기 + 검증
-	String pageParam = request.getParameter("page");
-	if (pageParam != null && !pageParam.trim().equals("")) {
-		try {
-			// 1이상의 자연수 이어야 한다
-			int p = Integer.parseInt(pageParam);
-			if (p > 0)
-				curPage = p;
-		} catch (NumberFormatException e) {
-			// page parameter 오류는 별도의 exception 처리 안함 
-		}
-	} // end if
-
-%>
 
 <%! 
 	// JDBC 관련 기본 객체 변수
@@ -41,8 +20,7 @@
 
 <%!
 	// 쿼리문 준비 
-	final String SQL_WRITE_DELETE_UID = 
-		"DELETE FROM test_write WHERE wr_uid = ?";
+	// TODO
 %>
 
 <%
@@ -53,10 +31,6 @@
 		out.println("conn 성공" + "<br>");
 		
 		// 트랜잭셕 실행
-		pstmt = conn.prepareStatement(SQL_WRITE_DELETE_UID);
-		pstmt.setInt(1, uid);
-		
-		cnt = pstmt.executeUpdate();
 		
 	}catch(Exception e){
 		e.printStackTrace();
@@ -74,15 +48,3 @@
 %>
 
 <%-- 위 트랜잭션이 마무리 되면 페이지 보여주기 --%>
-
-<% if(cnt == 0){ %>
-	<script type="text/javascript">
-		alert('삭제 실패!!');
-		history.back();
-	</script> 
-<% } else { %>
-	<script type="text/javascript">
-		alert('삭제 성공');
-		location.href = "list.jsp";
-	</script>
-<% } %>

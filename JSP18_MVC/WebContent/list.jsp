@@ -4,10 +4,9 @@
 <!-- JDBC 관련 import -->
 <%@ page import="java.text.SimpleDateFormat"%>
 <%@ page import="com.lec.beans.*" %>
-<jsp:useBean id="dao" class="com.lec.beans.WriteDAO"/>
 
-<%
-	WriteDTO[] arr = dao.select();
+<% // Controller로부터 결과 데이터 받아오기
+	WriteDTO[] arr = (WriteDTO[])request.getAttribute("list");
 %>
 
 <!DOCTYPE html>
@@ -43,7 +42,7 @@ table, th, td {
 %>
 		<tr>
 			<td><%= arr[i].getUid() %></td>
-			<td><a href="view.jsp?uid=<%=arr[i].getUid()%>">
+			<td><a href="view.do?uid=<%=arr[i].getUid()%>">
 				<%= arr[i].getSubject() %>
 			</a></td>
 			<td><%= arr[i].getName() %></td>
@@ -57,6 +56,6 @@ table, th, td {
 		
 	</table>
 	<br>
-	<button onclick="location.href='write.jsp'">신규등록</button>
+	<button onclick="location.href='write.do'">신규등록</button>
 </body>
 </html>

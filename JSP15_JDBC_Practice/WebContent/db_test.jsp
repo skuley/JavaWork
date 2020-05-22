@@ -1,8 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-
 <%@ page import="java.sql.*" %>
-<%@ page import="java.text.SimpleDateFormat" %>
 
 <%
 	// JDBC 기본 변수
@@ -22,9 +20,9 @@
 <%
 	try{
 		Class.forName(DRIVER);
-		out.println("driver 연결 성공");
+		out.println("driver 연결 성공" + "<br>");
 		conn = DriverManager.getConnection(URL, USERID, USERPW);
-		out.println("connection 연결 성공");
+		out.println("connection 연결 성공" + "<br>");
 		
 	} catch(Exception e){
 		e.printStackTrace();	

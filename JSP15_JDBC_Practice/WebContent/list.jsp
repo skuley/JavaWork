@@ -19,22 +19,37 @@
 %>
 
 <% // 쿼리문 준비
-	// TODO
+	final String SNS_SELECT_ALL = 
+		"SELECT * FROM sns_table";
 %>
 
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>SNS Table</title>
+<style type="text/css">
+	table{width:100%;}
+	table, th, td {
+		border: 1px solid black;
+		border-collapse: collapse;
+	}
+</style>
 </head>
 <body>
 <%
 	try{
 		Class.forName(DRIVER);
-		out.println("driver 연결 성공");
+		out.println("driver 연결 성공" + "<br>");
 		conn = DriverManager.getConnection(URL, USERID, USERPW);
-		out.println("connection 연결 성공");
+		out.println("connection 연결 성공" + "<br>");
+		
+		// transaction
+		pstmt = conn.prepareStatement(SNS_SELECT_ALL);
+		rs = pstmt.executeQuery();
+		
+		if(rs.next()) cnt = rs.getInt(1);
+		if(!rs.next()) out.println("안들어옴");
 		
 %>
 
@@ -46,6 +61,7 @@
 			<th>Date</th>
 			<th>Views</th>
 		</tr>
+		
 <%	while(rs.next()){ 
 	int uid = rs.getInt("sns_uid");	
 	String name = rs.getString("sns_name");
@@ -60,18 +76,19 @@
 	}
 	
 	int cntview = rs.getInt("sns_cntview");
-%>
-		<tr>
-			<td><%= name %></td>
-			<td><%= post %></td>
-			<td><%= regdate %></td>
-			<td><%= cntview %></td>
-		</tr>
+	
+		out.println("<tr>");
+		out.println("<td>" + name + "</td>");
+		out.println("<td><a href='view.jsp?uid=" + uid + "'>" + post + "</a></td>");
+		out.println("<td>" + regdate + "</td>");
+		out.println("<td>" + cntview + "</td>");
+		out.println("</tr>");
 			
+}
+%>
 	</table>
 	<br>
 	<button onclick="location.href='write.jsp'">신규등록</button>
-<% } %>
 <% 
 		
 	} catch(Exception e){

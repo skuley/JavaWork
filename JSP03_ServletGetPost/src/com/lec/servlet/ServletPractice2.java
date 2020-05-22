@@ -18,7 +18,7 @@ public class ServletPractice2 extends HttpServlet {
 		super();
 	}
     
-    public void doGet(HttpServletRequest request, HttpServletResponse response) {
+    public void doGet(HttpServletRequest request, HttpServletResponse response){
     	
     }
     

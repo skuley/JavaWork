@@ -16,7 +16,7 @@
 	final String USERID = "scott0316";
 	final String USERPW = "tiger0316";
 %>
-
+<% %>
 <%
 	try{
 		Class.forName(DRIVER);

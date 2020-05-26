@@ -5,31 +5,16 @@
 
 <c:choose>
 	<c:when test="${ result == 0 }">
-	<script>
-		alert('삭제 실패');
-		history.back();
-	</script>
+		<script>
+			alert('수정 실패');
+			history.back();
+		</script>
 	</c:when>
 	<c:otherwise>
 		<script>
-		alert('삭제 성공');
-		location.href = "list.do";  <%-- 삭제후에는 list 로 가자 --%>
+		alert('수정 성공');
+		location.href = "view.do?uid="+ ${param.uid};
 	</script>
 	</c:otherwise>
 </c:choose>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

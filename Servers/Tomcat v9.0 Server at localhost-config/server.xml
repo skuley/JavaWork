@@ -120,7 +120,7 @@
 				
 				
 				
-			<Context docBase="JSP20_FileUpload" path="/JSP20_FileUpload" reloadable="true" source="org.eclipse.jst.jee.server:JSP20_FileUpload"/></Host>
+			<Context docBase="JSPEX_AJAX_SPA" path="/JSPEX_AJAX_SPA" reloadable="true" source="org.eclipse.jst.jee.server:JSPEX_AJAX_SPA"/></Host>
 		</Engine>
 	</Service>
 </Server><!--  Connection Pool (Tomcat에서 제공되는 것)

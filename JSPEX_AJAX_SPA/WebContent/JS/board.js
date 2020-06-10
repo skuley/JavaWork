@@ -11,6 +11,26 @@ $(document).ready(function(){
 	// 게시판 목록 1 페이지 로딩
 	loadPage(page);
 	
+	// 글 작성 버튼 동작 (팝업)
+	$("#btnWrite").click(function(){
+		$("#dlg_write").show();
+	});
+	// 모달 대화상자에서 close 버튼 누르면 닫기
+	$(".modal .close").click(function(){
+		$(this).parents(".modal").hide();
+	});
+	
+	// 글 작성 submit 되면 
+	$("#frmWrite").submit(function(){
+		$(this).parents(".modal").hide();
+		return chkWrite();
+	});
+	
+	// 글 삭제 버튼 클릭
+	$("#btnDel").click(function(){
+		chkDelete();
+	});
+	
 });
 
 // 페이지 번째 page 로딩
@@ -47,7 +67,7 @@ function updateList(jsonObj){
 		
 		for(i = 0; i < count; i++){
 			result += "<tr>\n";
-			result += "<td>" + "</td>\n";
+			result += "<td><input type='checkbox' name='uid' value='" + items[i].uid + "'></td>\n";
 			result += "<td>" + items[i].uid + "</td>\n";
 			result += "<td>" + items[i].subject + "</td>\n";
 			result += "<td>" + items[i].name + "</td>\n";
@@ -136,6 +156,74 @@ function changePageRows(){
 	loadPage(window.page);
 }
 
+
+// 새글 등록 처리
+function chkWrite(){
+	var data = $("#frmWrite").serialize(); // 해당 폼 안의 name 이 있는 것들을 끌고 들어옴 String 타입으로 리턴
+	//alert(data);
+	// ajax request
+	$.ajax({
+		url : "writeOk.ajax"
+		, type : "POST"
+		, cache : false
+		, data : data // POST로 ajax request 하는 경우 parameter 담기
+		, success : function(data, status){
+			if(status == "success"){
+				if(data.status == "OK"){
+					alert("INSERT 성공" + data.count + " 개 : " + data.status);
+					loadPage(1); // 첫 페이지 리로딩 ORDER BY DESC
+				} else {
+					alert("INSERT 실패 " + data.status + " : " + data.message);
+				}
+			}
+		}
+	});
+	
+	// request 후, form 에 입력된것 reset()
+	$('#frmWrite')[0].reset();
+	
+	return false; // 페이지 reloading을 안하기 위해서 (form은 submit 되면 request가 발동되 reload가 자동적으로 발생된다)
+} // chkWrite()
+
+
+// check 된 uid 의 게시글들만 삭제하기
+function chkDelete(){
+	var uids = []; // 빈 배열 준비
+	$("#list tbody input[name=uid]").each(function(){
+		if($(this).is(":checked")){ // jQuery 에서 check 여부 확인 방법
+			uids.push($(this).val()); // 배열에 uid 값 추가
+		}
+	});
+	
+	// alert(uids);
+	if(uids.length == 0){
+		alert("삭제할 글을 체크하세요");
+	} else {
+		if(!confirm(uids.length + "개의 글을 삭제하시겠습니까?")) return false;
+		
+		var data = $("#frmList").serialize();
+		// uid=1010&uid=1011...
+		
+		$.ajax({
+			url : "deleteOk.ajax"
+			, type : "POST"
+			, data : data
+			, cache : false
+			, success : function(data, status){
+				if(status == "success"){
+					if(data.status == "OK"){
+						alert("DELETE 성공 " + data.count + " 개");
+						// 현재 페이지 리로딩
+						loadPage(window.page);
+					} else{
+						alert("DELETE 실패 " + data.message);
+					}
+				}
+			}
+		});
+		
+	}
+} // chkDelete()
 
 
 

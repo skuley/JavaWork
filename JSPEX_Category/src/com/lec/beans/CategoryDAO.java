@@ -42,13 +42,28 @@ public class CategoryDAO {
 	} // end close()
 
 	// 디비에서 특정 카테고리 이름들 가져오기
-	public CategoryDTO[] selectCate(int depth, int parent) throws SQLException {
+	public CategoryDTO[] selectCate(int depth) throws SQLException {
 		CategoryDTO[] arr = null;
 
 		try {
 			pstmt = conn.prepareStatement(D.SQL_CATEGORY_BY_DETPH_N_PARENT);
 			pstmt.setInt(1, depth);
-			pstmt.setInt(2, parent);
+			rs = pstmt.executeQuery();
+			
+			arr = createArray(rs);
+			
+		} finally {
+			close();
+		}
+		return arr;
+	}
+	
+	public CategoryDTO[] selectCate(int depth, int parent) throws SQLException {
+		CategoryDTO[] arr = null;
+
+		try {
+			pstmt = conn.prepareStatement(D.SQL_CATEGORY_BY_DETPH_N_PARENTS);
+			pstmt.setInt(1, depth);
 			rs = pstmt.executeQuery();
 			
 			arr = createArray(rs);
@@ -61,16 +76,19 @@ public class CategoryDAO {
 
 	public CategoryDTO[] createArray(ResultSet rs) throws SQLException {
 		CategoryDTO[] arr = null; // DTO 배열
-		int parent = 0;
+		int parent;
 		ArrayList<CategoryDTO> list = new ArrayList<CategoryDTO>();
 		while (rs.next()) {
-			int uid = rs.getInt("ca_uid");
-			String name = rs.getString("ca_name");
-			int depth = rs.getInt("ca_depth");
-			if(rs.getString("ca_parent") != null) {
-				parent = rs.getInt("ca_parent");
+			int uid = rs.getInt("uid");
+			String name = rs.getString("name");
+			int depth = rs.getInt("depth");
+			String parentstr = rs.getString("parent");
+			if(parentstr == null) {
+				parent = 0; 
+			} else {
+				parent = rs.getInt("parent");
 			}
-			int order = rs.getInt("ca_order");
+			int order = rs.getInt("order");
 
 			CategoryDTO dto = new CategoryDTO(uid, name, depth, parent, order);
 			list.add(dto);

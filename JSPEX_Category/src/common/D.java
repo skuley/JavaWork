@@ -16,6 +16,12 @@ public class D {
 	public static final String SQL_CATEGORY_BY_DETPH_N_PARENT = 
 			"SELECT ca_uid \"uid\", ca_name name, ca_depth depth, ca_parent parent, ca_order \"order\" " +
 			"FROM test_category " +
+			"WHERE ca_depth = ? " +
+			"ORDER BY ca_order ASC"; 
+	
+	public static final String SQL_CATEGORY_BY_DETPH_N_PARENTS = 
+			"SELECT ca_uid \"uid\", ca_name name, ca_depth depth, ca_parent parent, ca_order \"order\" " +
+			"FROM test_category " +
 			"WHERE ca_depth = ? AND ca_parent = ? " +
 			"ORDER BY ca_order ASC"; 
 }

@@ -17,56 +17,66 @@ public class CateListCommand implements Command {
 
 	@Override
 	public void execute(HttpServletRequest request, HttpServletResponse response) {
-		
+
 		CategoryDAO dao = new CategoryDAO();
 		CategoryDTO[] arr = null;
-		
+
 		String status = "FAIL";
-		int depth = 1;
-		int parent = 0;
+
+		String depthStr = request.getParameter("depth");
+		String parentStr = request.getParameter("parent");
 		
-		depth = Integer.parseInt(request.getParameter("depth"));
-		String param = request.getParameter("parent");
-		if(depth == 1 && param == null || param == "") {
-			parent = 0;
-		} else if(depth >= 1 && param == null || Integer.parseInt(param) > 100 ) {
-			status="FAIL";
-		} else {
-			parent = Integer.parseInt(param);
-		}
-		
-		try {
-			arr = dao.selectCate(depth, parent);
-			if(arr == null) {
+		if(depthStr == null && parentStr == null ||
+				Integer.parseInt(depthStr) == 1 && parentStr == "" ||
+				Integer.parseInt(depthStr) == 1 && Integer.parseInt(parentStr) == 0) {
+			int depth = 1;
+			try {
+				arr = dao.selectCate(depth);
+				
+				if (arr == null) {
+					status = "FAIL";
+				} else {
+					status = "SUCCESS";
+				}
+			} catch (SQLException e) {
 				status = "FAIL";
-			} else {
-				status = "SUCCESS";
 			}
-		} catch(SQLException e) {
+		} else if(Integer.parseInt(depthStr) > 100 && Integer.parseInt(parentStr) > 100) {
 			status = "FAIL";
+		} else {
+			int depth = Integer.parseInt(depthStr);
+			int parent = Integer.parseInt(parentStr);
+			try {
+				arr = dao.selectCate(depth, parent);
+				if(arr == null) {
+					status = "FAIL";
+				} else {
+					status = "SUCCESS";
+				}
+			} catch(SQLException e) {
+				status = "FAIL";
+			}
 		}
 		
-		
-		
+
 		AjaxCateList result = new AjaxCateList();
-		
+
 		result.setStatus(status);
-		
-		if(arr != null) {
+
+		if (arr != null) {
 			result.setCount(arr.length);
 			result.setList(Arrays.asList(arr));
 		}
-		
-		ObjectMapper mapper = new ObjectMapper(); 
-		
+
+		ObjectMapper mapper = new ObjectMapper();
+
 		try {
-			String jsonString = mapper.writerWithDefaultPrettyPrinter()
-					.writeValueAsString(result);
-			response.setContentType("application/json; charset=utf-8"); 
+			String jsonString = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(result);
+			response.setContentType("application/json; charset=utf-8");
 			response.getWriter().write(jsonString);
-		} catch(JsonProcessingException e) {
+		} catch (JsonProcessingException e) {
 			e.printStackTrace();
-		} catch(IOException e) {
+		} catch (IOException e) {
 			e.printStackTrace();
 		}
 	} // execute()

@@ -75,6 +75,6 @@ INSERT INTO test_category VALUES(test_category_seq.nextval, '글러브', 3, 24, 
 -- depth 2 이면서 parent uid 가 1인 카테고리 읽기 order by 순서
 SELECT ca_uid "uid", ca_name "name", ca_depth "DEPTH", ca_parent "parent", ca_order "order"
 FROM test_category
-WHERE ca_depth = 2 AND ca_parent = 2 
+WHERE ca_depth = 3 AND ca_parent = 1 
 ORDER BY ca_order ASC;
 

@@ -64,6 +64,7 @@ public class CategoryDAO {
 		try {
 			pstmt = conn.prepareStatement(D.SQL_CATEGORY_BY_DETPH_N_PARENTS);
 			pstmt.setInt(1, depth);
+			pstmt.setInt(2, parent);
 			rs = pstmt.executeQuery();
 			
 			arr = createArray(rs);

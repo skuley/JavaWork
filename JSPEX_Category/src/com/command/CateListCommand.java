@@ -44,7 +44,7 @@ public class CateListCommand implements Command {
 		} else if(Integer.parseInt(depthStr) > 100 && Integer.parseInt(parentStr) > 100) {
 			status = "FAIL";
 		} else {
-			int depth = Integer.parseInt(depthStr);
+			int depth = Integer.parseInt(depthStr) + 1;
 			int parent = Integer.parseInt(parentStr);
 			try {
 				arr = dao.selectCate(depth, parent);

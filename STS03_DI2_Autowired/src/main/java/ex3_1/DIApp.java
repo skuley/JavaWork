@@ -1,4 +1,4 @@
-package ex2_1;
+package ex3_1;
 
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.GenericXmlApplicationContext;
@@ -14,9 +14,10 @@ public class DIApp {
 		int sum = op.doOperate();
 		System.out.println("sum : " + sum);
 		
-		op = ctx.getBean("minus", OperatorBean.class);
-		int sub = op.doOperate();
-		System.out.println("subtract : " + sub);
+		/*
+		 * op = ctx.getBean("minus", OperatorBean.class); int sub = op.doOperate();
+		 * System.out.println("subtract : " + sub);
+		 */
 		
 		ctx.close();
 

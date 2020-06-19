@@ -125,12 +125,21 @@ class ListService implements Service{
 	
 }
 
-
-
-
-
-
-
+class ViewService implements Service{
+	
+	@Autowired
+	DAO myDao; // @Autowired 된 변수 이름 주목!!
+	
+	public ViewService() {
+		System.out.println("ViewService() 생성");
+	}
+	
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return String.format("[ViewService : %s]", myDao.toString());
+	}
+}
 
 
 

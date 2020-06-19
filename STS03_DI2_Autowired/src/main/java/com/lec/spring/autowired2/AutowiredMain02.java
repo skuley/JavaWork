@@ -13,6 +13,7 @@ public class AutowiredMain02 {
 		
 		System.out.println(ctx.getBean("listService"));
 		
+		System.out.println(ctx.getBean("viewService"));
 		
 		
 		

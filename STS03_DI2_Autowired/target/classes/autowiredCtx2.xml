@@ -17,6 +17,17 @@
 		<qualifier value="boardDAO"/>
 	</bean>
 	
-	<bean id="listService" class="com.lec.beans.ListService"></bean>
+	<bean id="listService" class="com.lec.beans.ListService"/>
+	
+	<!-- 
+		동일 DAO 객체 여러개인데 qualifier 가 지정되어 있지 않으면 
+		이름이 같은것으로 찾는다 [ id 이름 == @Autowired 객체변수이름]
+	 -->
+	
+	<bean id="myDao" class="com.lec.beans.DAO">
+		<constructor-arg value="DAO_VOTE"/>
+	</bean>
+	
+	<bean id="viewService" class="com.lec.beans.ViewService"/>
 
 </beans>

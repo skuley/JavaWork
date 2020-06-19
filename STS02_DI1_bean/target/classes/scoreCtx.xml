@@ -43,7 +43,7 @@
 		<constructor-arg type="short" value="91"/> -->
 	</bean>
 	
-	<!-- 배열 타입 매개변수 생성자 -->
+	<!-- 배열/List 타입 매개변수 생성자 -->
 	<bean id="myScore5" class="com.lec.spring.Score">
 		<constructor-arg>
 			<list>
@@ -73,6 +73,16 @@
 		<constructor-arg value="70"/>
 		<constructor-arg value="91"/>
 		<constructor-arg value="악몽이다"/>
+	</bean>
+	
+	<bean id="myScore8" class="com.lec.spring.Score">
+		<property name="score">
+			<list>
+				<value>100</value>
+				<value>600</value>
+				<value>200</value>
+			</list>
+		</property>
 	</bean>
 
 </beans>

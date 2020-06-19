@@ -1,6 +1,7 @@
 package com.lec.spring;
 
 import java.util.Arrays;
+import java.util.List;
 
 public class Score {
 	
@@ -69,6 +70,12 @@ public class Score {
 
 	public void setComment(String comment) {
 		this.comment = comment;
+	}
+	
+	public void setScore(List<Integer> scores) {
+		this.kor = scores.get(0);
+		this.eng = scores.get(1);
+		this.math = scores.get(2);
 	}
 	
 	@Override

@@ -31,7 +31,6 @@ public class MinusOp implements OperatorBean {
 		this.operand2 = operand2;
 	}
 
-	@Override
 	public int doOperate() {
 		
 		if(operand1 > operand2) {

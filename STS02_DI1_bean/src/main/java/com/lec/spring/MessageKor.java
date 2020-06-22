@@ -8,8 +8,9 @@ public class MessageKor implements MessageBean {
 		System.out.println("MessageKor() 생성");
 	}
 
-	@Override
 	public void sayHello() {
 		System.out.println(msgKor);
 	}
+	
+	
 }

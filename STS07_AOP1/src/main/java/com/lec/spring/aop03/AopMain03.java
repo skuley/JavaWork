@@ -2,9 +2,7 @@ package com.lec.spring.aop03;
 
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.GenericXmlApplicationContext;
-
-import com.lec.spring.beans.Service;
-import com.lec.spring.beans.ServiceEx;
+import com.lec.beans.*;
 
 public class AopMain03 {
 

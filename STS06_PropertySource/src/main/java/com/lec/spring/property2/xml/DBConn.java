@@ -38,12 +38,10 @@ public class DBConn implements InitializingBean, DisposableBean{
 	}
 	
 	
-	@Override
 	public void destroy() throws Exception {
 		System.out.println("destroy() 호출");
 		
 	}
-	@Override
 	public void afterPropertiesSet() throws Exception {
 		System.out.println("afterPropertiesSet() 호출");
 		

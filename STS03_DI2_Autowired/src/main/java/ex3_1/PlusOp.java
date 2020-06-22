@@ -48,7 +48,6 @@ public class PlusOp implements OperatorBean {
 	}
 
 
-	@Override
 	public int doOperate() {
 		return operand1.getValue() + operand2.getValue();
 	}

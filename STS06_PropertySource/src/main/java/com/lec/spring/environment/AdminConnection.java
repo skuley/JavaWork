@@ -14,19 +14,16 @@ public class AdminConnection implements EnvironmentAware, InitializingBean, Disp
 	
 	// Bean이 (AdminConnection) 생성될때 호출 된다
 	// afterPropertiesSet() 이전에 호출, 즉 InitializingBean 보다 먼저 호출됨에 주촉
-	@Override
 	public void setEnvironment(Environment environment) {
 		System.out.println("setEnvironment() 호출");
 		setEnv(environment);
 	}
 
 	
-	@Override
 	public void destroy() throws Exception {
 		
 	}
 
-	@Override
 	public void afterPropertiesSet() throws Exception {
 		System.out.println("afterPropertiesSet() 호출");
 		// 설정팡리의 property 들

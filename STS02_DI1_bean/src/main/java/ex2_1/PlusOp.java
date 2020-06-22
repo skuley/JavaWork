@@ -32,7 +32,6 @@ public class PlusOp implements OperatorBean {
 		this.operand2 = operand2;
 	}
 
-	@Override
 	public int doOperate() {
 		int result = operand1 + operand2;
 		return result;

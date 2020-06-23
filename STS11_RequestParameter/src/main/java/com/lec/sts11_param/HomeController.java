@@ -14,6 +14,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import com.lec.beans.WriteDTO;
+
 /**
  * Handles requests for the application home page.
  */
@@ -105,11 +107,32 @@ public class HomeController {
 	}
 	
 	
+	// --------------------------------------------------------
+	// 커맨드 객체 (Command Object)
+	@RequestMapping("/board/write")
+	public String writeBoard() {
+		return "board/write";
+	}
 	
+	// 기존 방식으로 form을 받아온다면
+	// 매 parameter 들을 매개변수화? 해야한다 힘들다...
+	@RequestMapping(value="/board/writeOk", method=RequestMethod.POST)
+//	public String writeOkBoard(Model model, 
+//			@RequestParam("name") String name,
+//			@RequestParam("subject") String subject,
+//			@RequestParam("content") String content) {
+//		WriteDTO dto = new WriteDTO();
+//		dto.setName(name);
+//		dto.setSubject(subject);
+//		dto.setContent(content);
+//		
+//		model.addAttribute("dto", dto);
+//		return "board/writeOk";
+//	}
 	
-	
-	
-	
+	public String writeOkBoard(WriteDTO dto) {
+		return "board/writeOk";
+	}
 	
 	
 	

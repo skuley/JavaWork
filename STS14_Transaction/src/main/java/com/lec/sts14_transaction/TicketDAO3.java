@@ -69,10 +69,6 @@ public class TicketDAO3 {
 				
 			}
 		});
-		
-
-
-
 
 	}
 

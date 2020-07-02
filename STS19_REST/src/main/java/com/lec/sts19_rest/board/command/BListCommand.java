@@ -4,7 +4,6 @@ import java.sql.SQLException;
 
 import org.springframework.ui.Model;
 
-import com.lec.beans.WriteDAO;
 import com.lec.sts19_rest.board.C;
 import com.lec.sts19_rest.board.beans.BWriteDTO;
 import com.lec.sts19_rest.board.beans.IWriteDAO;

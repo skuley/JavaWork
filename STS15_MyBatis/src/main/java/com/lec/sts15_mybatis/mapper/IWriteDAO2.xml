@@ -21,4 +21,6 @@
 		VALUES
 			(test_write_seq.nextval, #{param1}, #{param2}, #{param3})
 	</insert>
+	
+	
 </mapper>

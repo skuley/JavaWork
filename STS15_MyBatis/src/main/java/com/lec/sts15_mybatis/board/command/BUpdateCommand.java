@@ -16,7 +16,8 @@ public class BUpdateCommand implements BCommand {
 		BWriteDTO dto = (BWriteDTO)map.get("dto");
 		
 		IWriteDAO dao = C.sqlSession.getMapper(IWriteDAO.class);
-		model.addAttribute("result", dao.update(dto));
+		// model.addAttribute("result", dao.update(dto));
+		model.addAttribute("result", dao.update(dto.getUid(), dto));
 		
 
 	}

@@ -47,6 +47,22 @@
 		<beans:constructor-arg index="0" ref="sqlSessionFactory"/>
 	</beans:bean>
 	
+	<!-- Transaction -->
+	<beans:bean name="transactionManager" 
+		class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<beans:property name="dataSource" ref="dataSource" />
+	</beans:bean>
+	
+	<beans:bean name="transactionTemplate" 
+			class="org.springframework.transaction.support.TransactionTemplate">
+		<beans:property name="transactionManager" ref="transactionManager"/>
+	</beans:bean>
+	
+	<beans:bean name="ticketService" class="com.lec.sts15_mybatis.ticket.TicketService">
+		
+	</beans:bean>
+	
+	
 	
 	
 </beans:beans>

@@ -5,22 +5,23 @@
 
     
 <mapper namespace="com.lec.sts15_mybatis.board.beans.IWriteDAO">
-	<!-- 
+	
 	<insert id="insert" flushCache="true" 
-		parameterType="com.lec.sts15_mybatis.board.beans.BWriteDTO">
+		parameterType="com.lec.sts15_mybatis.board.beans.BWriteDTO"
+			keyProperty="uid" useGeneratedKeys="true" keyColumn="wr_uid">
 		INSERT INTO 
 			test_write (wr_uid, wr_subject, wr_content, wr_name, wr_regdate) 
 		VALUES
 			(test_write_seq.nextval, #{subject}, #{content}, #{name}, SYSDATE)
 	</insert>
-	 -->
 	
-	<insert id="insert" flushCache="true">
+	
+	<!-- <insert id="insert" flushCache="true">
 		INSERT INTO 
 			test_write (wr_uid, wr_subject, wr_content, wr_name) 
 		VALUES
 			(test_write_seq.nextval, #{param1}, #{param2}, #{param3})
-	</insert>
+	</insert> -->
 	
 	
 </mapper>

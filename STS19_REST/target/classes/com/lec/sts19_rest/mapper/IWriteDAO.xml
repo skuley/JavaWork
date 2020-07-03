@@ -57,6 +57,21 @@
 		DELETE FROM test_write WHERE wr_uid = #{param1}
 	</delete>
 	
+	<select id="countAll"
+	resultType="com.lec.sts19_rest.board.beans.BWriteDTO">
+		SELECT count(*) FROM test_write
+	</select>
+	
+	<select id="selectFromRow" resultType="com.lec.sts19_rest.board.beans.BWriteDTO">
+		<![CDATA[
+			SELECT * 
+			FROM (SELECT ROWNUM AS RNUM, T.* 
+			FROM (SELECT * FROM test_write ORDER BY wr_uid DESC) T) 
+			WHERE RNUM >= #{param1} AND RNUM < #{param2}
+		]]>
+	
+	</select>
+	
 	
 	
 

@@ -16,8 +16,14 @@ public interface IWriteDAO {
 	public int update(final BWriteDTO dto);
 	public int update(int uid, @Param("a")BWriteDTO dto);
 	public int deleteByUid(final int uid);
-	
 	public int incViewCnt(int uid); // 조회수 증가
 	
-	public BWriteDTO searchBySubject(String subject);
+	// 페이징
+	// 글 목록 전체 개수 가져오기
+	public int countAll();
+	
+	// fromRow 부터 pageRows 만큼 SELECT
+	public List<BWriteDTO> selectFromRow(int fromRow, int pageRows);
+	
+//	public BWriteDTO searchBySubject(String subject);
 }

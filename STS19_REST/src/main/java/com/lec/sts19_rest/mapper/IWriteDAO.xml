@@ -57,8 +57,7 @@
 		DELETE FROM test_write WHERE wr_uid = #{param1}
 	</delete>
 	
-	<select id="countAll"
-	resultType="com.lec.sts19_rest.board.beans.BWriteDTO">
+	<select id="countAll" flushCache="true" resultType="java.lang.Integer">
 		SELECT count(*) FROM test_write
 	</select>
 	

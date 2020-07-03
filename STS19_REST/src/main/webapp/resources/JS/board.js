@@ -53,7 +53,7 @@ $(document).ready(function(){
 // 페이지 번째 page 로딩
 function loadPage(page){
 	$.ajax({
-		url : "list.ajax?page=" + page + "&pageRows=" + pageRows
+		url : "list/" + page + "/" + pageRows
 		, type : "GET"
 		, cache : false
 		, success : function(data, status){

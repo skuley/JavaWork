@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.lec.sts19_rest.ajax.command.AjaxListCommand;
 import com.lec.sts19_rest.board.C;
 import com.lec.sts19_rest.board.beans.AjaxWriteList;
 import com.lec.sts19_rest.board.beans.IWriteDAO;
@@ -17,9 +18,7 @@ public class BoardAjaxController {
 	@GetMapping("/list/{page}/{pageRows}")
 	public AjaxWriteList ajaxList(
 			@PathVariable("page") int page,
-			@PathVariable("pageRows") int pageRows,
-			Model model) {
-		
+			@PathVariable("pageRows") int pageRows) {
 		
 		IWriteDAO dao = C.sqlSession.getMapper(IWriteDAO.class);
 		AjaxWriteList list = new AjaxWriteList();

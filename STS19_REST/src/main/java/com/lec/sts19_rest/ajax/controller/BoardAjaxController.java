@@ -30,6 +30,7 @@ public class BoardAjaxController {
 		
 		list.setCount(totalCnt);
 		list.setStatus("OK");
+		list.setTotalCnt(totalCnt);
 		
 		int fromRow = (page - 1) * pageRows + 1;
 		dao.selectFromRow(fromRow, pageRows);

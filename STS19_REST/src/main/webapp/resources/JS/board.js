@@ -92,8 +92,8 @@ function updateList(jsonObj){
 			result += "<td>" + items[i].uid + "</td>\n";
 			result += "<td><span class='subject' data-uid='" + items[i].uid + "'>" + items[i].subject + "</span></td>\n";
 			result += "<td>" + items[i].name + "</td>\n";
-			result += "<td><span data-viewcnt='" + items[i].uid + "'>" + items[i].viewcnt + "</span></td>\n";
-			result += "<td>" + items[i].regdate + "</td>\n";
+			result += "<td><span data-viewcnt='" + items[i].uid + "'>" + items[i].viewCnt + "</span></td>\n";
+			result += "<td>" + items[i].regDate + "</td>\n";
 			result += "</tr>\n";
 		} // for
 		

@@ -52,7 +52,6 @@
 		wr_content = #{a.content} WHERE wr_uid = #{param1}
 	</update>
 
-
 	<delete id="deleteByUid">
 		DELETE FROM test_write WHERE wr_uid = #{param1}
 	</delete>
@@ -63,9 +62,8 @@
 	
 	<select id="selectFromRow" resultType="com.lec.sts19_rest.board.beans.BWriteDTO">
 		<![CDATA[
-			SELECT * 
-			FROM (SELECT ROWNUM AS RNUM, T.* 
-			FROM (SELECT * FROM test_write ORDER BY wr_uid DESC) T) 
+			SELECT wr_uid "uid", wr_subject subject, wr_content content, wr_name name, wr_viewcnt viewCnt, wr_regdate regDate FROM 
+			(SELECT ROWNUM AS RNUM, T.* FROM (SELECT * FROM test_write ORDER BY wr_uid DESC) T) 
 			WHERE RNUM >= #{param1} AND RNUM < #{param2}
 		]]>
 	

@@ -44,6 +44,10 @@ INSERT INTO test_write(wr_uid, wr_subject, wr_content, wr_name)
 DELETE FROM test_write WHERE wr_uid > 10;
 
 
+SELECT * FROM 
+			(SELECT ROWNUM AS RNUM, T.* FROM (SELECT * FROM test_write ORDER BY wr_uid DESC) T) 
+			WHERE RNUM >= 1 AND RNUM < 5;
+
 
 
 

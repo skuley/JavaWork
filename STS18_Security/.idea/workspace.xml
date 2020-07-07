@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="STS18_Security:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0e782286-8f5e-4158-a230-43b7ceb9c7a7" name="Default Changelist" comment="2020-07-07 13:21">
+      <change afterPath="$PROJECT_DIR$/.dbeaver/credentials-config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.dbeaver/data-sources.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.dbeaver/project-metadata.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/47bd91ef-ecf3-4b12-8cbb-44694c91e990.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/47bd91ef-ecf3-4b12-8cbb-44694c91e990/storage_v2/_src_/schema/PUBLIC.aaZQjQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/47bd91ef-ecf3-4b12-8cbb-44694c91e990/storage_v2/_src_/schema/SCOTT0316.p2Y4KQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/47bd91ef-ecf3-4b12-8cbb-44694c91e990/storage_v2/_src_/schema/SYS.rUIBAA.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/47bd91ef-ecf3-4b12-8cbb-44694c91e990/storage_v2/_src_/schema/SYSTEM.L2avkg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_oracle_database_ha_ons_11_2_0_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_oracle_database_ha_simplefan_11_2_0_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_oracle_database_jdbc_ojdbc6_11_2_0_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_oracle_database_jdbc_ucp_11_2_0_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_oracle_database_security_oraclepki_11_2_0_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_oracle_database_security_osdt_cert_11_2_0_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_oracle_database_security_osdt_core_11_2_0_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_all_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ERD/spring_security_oracle.erm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ERD/spring_security_oracle.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ERD/test_auth_oracle.erm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ERD/test_auth_oracle.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lec/sts18_security/security/CustomNoOpPasswordEncoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lec/sts18_security/security/MemberTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lec/sts18_security/security/TestJunit1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/lec/sts18_security/security/MemberTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/lec/sts18_security/security/TestJunit1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/sts18_security-1.0.0-BUILD-SNAPSHOT/WEB-INF/views/customLogout.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test02/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test02/.idea/artifacts/Test02_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test02/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test02/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test02/.idea/libraries/Maven__com_oracle_database_ha_ons_11_2_0_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test02/.idea/libraries/Maven__com_oracle_database_ha_simplefan_11_2_0_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test02/.idea/libraries/Maven__com_oracle_database_jdbc_ojdbc6_11_2_0_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test02/.idea/libraries/Maven__com_oracle_database_jdbc_ucp_11_2_0_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test02/.idea/libraries/Maven__com_oracle_database_security_oraclepki_11_2_0_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test02/.idea/libraries/Maven__com_oracle_database_security_osdt_cert_11_2_0_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test02/.idea/libraries/Maven__com_oracle_database_security_osdt_core_11_2_0_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test02/.idea/libraries/Spring_5_2_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test02/.idea/libraries/Spring_MVC_5_2_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test02/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test02/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test02/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test02/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test02/Test02.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test02/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test02/src/main/java/main/java/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test02/web/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test02/web/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test02/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test02/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STS01_HelloSpring/target/classes/META-INF/maven/org.springframework.samples/STS01_HelloSpring/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../STS01_HelloSpring/target/classes/META-INF/maven/org.springframework.samples/STS01_HelloSpring/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STS02_DI1_bean/target/classes/META-INF/maven/org.springframework.samples/STS02_DI1/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../STS02_DI1_bean/target/classes/META-INF/maven/org.springframework.samples/STS02_DI1/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STS03_DI2_Autowired/target/classes/META-INF/maven/org.springframework.samples/STS03_DI2_Autowired/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../STS03_DI2_Autowired/target/classes/META-INF/maven/org.springframework.samples/STS03_DI2_Autowired/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STS04_DI3_Config/target/classes/META-INF/maven/org.springframework.samples/STS04_DI3_Config/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../STS04_DI3_Config/target/classes/META-INF/maven/org.springframework.samples/STS04_DI3_Config/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STS05_LifeCycle/target/classes/META-INF/maven/org.springframework.samples/STS05_LifeCycle/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../STS05_LifeCycle/target/classes/META-INF/maven/org.springframework.samples/STS05_LifeCycle/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STS06_PropertySource/target/classes/META-INF/maven/org.springframework.samples/STS06_DI_Config2/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../STS06_PropertySource/target/classes/META-INF/maven/org.springframework.samples/STS06_DI_Config2/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STS07_AOP1/target/classes/META-INF/maven/org.springframework.samples/STS07_AOP/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../STS07_AOP1/target/classes/META-INF/maven/org.springframework.samples/STS07_AOP/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STS08_AOP2/target/classes/META-INF/maven/org.springframework.samples/STS08_AOP2/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../STS08_AOP2/target/classes/META-INF/maven/org.springframework.samples/STS08_AOP2/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STS09_MVC/target/m2e-wtp/web-resources/META-INF/maven/com.lec/sts09_mvc/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../STS09_MVC/target/m2e-wtp/web-resources/META-INF/maven/com.lec/sts09_mvc/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STS10_Request/target/m2e-wtp/web-resources/META-INF/maven/com.lec/sts10_request/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../STS10_Request/target/m2e-wtp/web-resources/META-INF/maven/com.lec/sts10_request/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STS11_RequestParameter/target/m2e-wtp/web-resources/META-INF/maven/com.lec/sts11_param/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../STS11_RequestParameter/target/m2e-wtp/web-resources/META-INF/maven/com.lec/sts11_param/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STS12_Validation/target/m2e-wtp/web-resources/META-INF/maven/com.lec/sts12_validation/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../STS12_Validation/target/m2e-wtp/web-resources/META-INF/maven/com.lec/sts12_validation/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STS13_JDBC/target/m2e-wtp/web-resources/META-INF/maven/com.lec/sts13_jdbc/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../STS13_JDBC/target/m2e-wtp/web-resources/META-INF/maven/com.lec/sts13_jdbc/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STS14_Transaction/target/m2e-wtp/web-resources/META-INF/maven/com.lec/sts14_transaction/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../STS14_Transaction/target/m2e-wtp/web-resources/META-INF/maven/com.lec/sts14_transaction/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STS15_MyBatis/target/m2e-wtp/web-resources/META-INF/maven/com.lec/sts15_mybatis/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../STS15_MyBatis/target/m2e-wtp/web-resources/META-INF/maven/com.lec/sts15_mybatis/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STS16_Interceptor/target/m2e-wtp/web-resources/META-INF/maven/com.lec/sts13_jdbc/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../STS16_Interceptor/target/m2e-wtp/web-resources/META-INF/maven/com.lec/sts13_jdbc/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/STS18_Security_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/STS18_Security_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/STS18_Security.iml" beforeDir="false" afterPath="$PROJECT_DIR$/STS18_Security.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/appServlet/security-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/appServlet/security-context.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/root-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/root-context.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/m2e-wtp/web-resources/META-INF/maven/com.lec/sts18_security/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/m2e-wtp/web-resources/META-INF/maven/com.lec/sts18_security/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/m2e-wtp/web-resources/META-INF/maven/com.lec/sts18_security/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/m2e-wtp/web-resources/META-INF/maven/com.lec/sts18_security/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sts18_security-1.0.0-BUILD-SNAPSHOT/WEB-INF/spring/appServlet/security-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/sts18_security-1.0.0-BUILD-SNAPSHOT/WEB-INF/spring/appServlet/security-context.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sts18_security-1.0.0-BUILD-SNAPSHOT/WEB-INF/spring/root-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/sts18_security-1.0.0-BUILD-SNAPSHOT/WEB-INF/spring/root-context.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STS19_REST/target/classes/log4j.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STS19_REST/target/m2e-wtp/web-resources/META-INF/maven/com.lec/sts19_rest/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../STS19_REST/target/m2e-wtp/web-resources/META-INF/maven/com.lec/sts19_rest/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STS19_REST/target/m2e-wtp/web-resources/META-INF/maven/com.lec/sts19_rest/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../STS19_REST/target/m2e-wtp/web-resources/META-INF/maven/com.lec/sts19_rest/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Servers2/Tomcat v9.0 Server at localhost-config/server.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Servers2/Tomcat v9.0 Server at localhost-config/server.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit3 Test Class" />
+        <option value="Class" />
+        <option value="JUnit4 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectId" id="1eKuonbPNrZeMi2LC1C8lU3hVEi" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="oracle" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3" value="junit.framework.TestCase" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.lec.sts18_security.security" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+      <recent name="junit.framework.TestCase" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.TestJunit1.test">
+    <configuration name="MemberTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="STS18_Security" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lec.sts18_security.security.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lec.sts18_security.security" />
+      <option name="MAIN_CLASS_NAME" value="com.lec.sts18_security.security.MemberTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestJunit1.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="STS18_Security" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lec.sts18_security.security.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lec.sts18_security.security" />
+      <option name="MAIN_CLASS_NAME" value="com.lec.sts18_security.security.TestJunit1" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tomcat 9.0.353" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.353" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="STS18_Security:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_STS18_Security" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="51897" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="STS18_Security:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Tomcat Server.Tomcat 9.0.353" />
+      <item itemvalue="JUnit.MemberTests" />
+      <item itemvalue="JUnit.TestJunit1.test" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TestJunit1.test" />
+        <item itemvalue="JUnit.MemberTests" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0e782286-8f5e-4158-a230-43b7ceb9c7a7" name="Default Changelist" comment="" />
+      <created>1594082782336</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1594082782336</updated>
+      <workItem from="1594082788787" duration="8279000" />
+      <workItem from="1594092764841" duration="210000" />
+      <workItem from="1594092983796" duration="2711000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="2020-07-07 13:21" />
+    <option name="LAST_COMMIT_MESSAGE" value="2020-07-07 13:21" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="557" y="135" key="#MemberTests" timestamp="1594089632275">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="557" y="121" key="#MemberTests.testA" timestamp="1594089664923">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="557" y="121" key="#MemberTests.testA/0.0.1920.1040@0.0.1920.1040" timestamp="1594089664923" />
+    <state x="557" y="135" key="#MemberTests/0.0.1920.1040@0.0.1920.1040" timestamp="1594089632275" />
+    <state x="440" y="94" key="#Project_Structure" timestamp="1594086363141">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="440" y="94" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1594086363141" />
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594094221927">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594094221927" />
+    <state x="765" y="225" key="#com.intellij.ide.util.MemberChooser" timestamp="1594083038332">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="225" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1594083038332" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1594085137752">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1594085137752" />
+    <state width="1877" height="362" key="GridCell.Tab.0.bottom" timestamp="1594095643259">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="362" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594095643259" />
+    <state width="1877" height="362" key="GridCell.Tab.0.center" timestamp="1594095643259">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="362" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594095643259" />
+    <state width="1877" height="362" key="GridCell.Tab.0.left" timestamp="1594095643259">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="362" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594095643259" />
+    <state width="1877" height="362" key="GridCell.Tab.0.right" timestamp="1594095643259">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="362" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594095643259" />
+    <state width="1848" height="10" key="GridCell.Tab.1.bottom" timestamp="1594092745546">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1848" height="10" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594092745546" />
+    <state width="1848" height="10" key="GridCell.Tab.1.center" timestamp="1594092745546">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1848" height="10" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594092745546" />
+    <state width="1848" height="10" key="GridCell.Tab.1.left" timestamp="1594092745546">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1848" height="10" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594092745546" />
+    <state width="1848" height="10" key="GridCell.Tab.1.right" timestamp="1594092745546">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1848" height="10" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594092745546" />
+    <state width="1848" height="10" key="GridCell.Tab.2.bottom" timestamp="1594092745546">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1848" height="10" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594092745546" />
+    <state width="1848" height="10" key="GridCell.Tab.2.center" timestamp="1594092745546">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1848" height="10" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594092745546" />
+    <state width="1848" height="10" key="GridCell.Tab.2.left" timestamp="1594092745546">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1848" height="10" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594092745546" />
+    <state width="1848" height="10" key="GridCell.Tab.2.right" timestamp="1594092745546">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1848" height="10" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594092745546" />
+    <state x="490" y="175" key="Maven.ArtifactSearchDialog" timestamp="1594093478071">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="490" y="175" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594093478071" />
+    <state x="461" y="164" key="SettingsEditor" timestamp="1594093361858">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1594093361858" />
+    <state x="686" y="481" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1594085006005">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="686" y="481" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1040@0.0.1920.1040" timestamp="1594085006005" />
+    <state x="765" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1594084852461">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1594084852461" />
+    <state x="731" y="347" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1594095326370">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="731" y="347" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594095326370" />
+    <state x="668" y="223" width="584" height="594" key="find.popup" timestamp="1594092810368">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="668" y="223" width="584" height="594" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1594092810368" />
+  </component>
+</project>

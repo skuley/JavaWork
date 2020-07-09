@@ -7,7 +7,7 @@ import static org.junit.Assert.*;
 
 /*
 * /*
- 1 void assertEquals(boolean expected, boolean actual)
+1 void assertEquals(boolean expected, boolean actual)
 2 void assertFalse(boolean condition)    // false 인지 체크
 3 void assertNotNull(Object object)   // Object 가 null 이 아닌지 체크
 4 void assertNull(Object object)   // Object 가 null 인지 체크
@@ -29,6 +29,11 @@ public class TestJunit1 {
 
         //assertNotNull(temp);
         assertNull(temp);
+
+        System.out.println(12.3 / 4.1);
+        // double/float 실수 연산 결과 값의 오차 범위 delta 값
+//        assertEquals(3.0, 12.3 / 4.1); // **FAIL**
+        assertEquals(3.0, 12.3 / 4.1, 0.00001);
 
     }
 }

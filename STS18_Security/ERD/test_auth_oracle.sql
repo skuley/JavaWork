@@ -9,15 +9,13 @@ DROP TABLE tbl_member CASCADE CONSTRAINTS;
 
 /* Create Tables */
 
-CREATE TABLE tbl_member
-(
-	userid varchar2(50) NOT NULL,
+CREATE TABLE tbl_member (
+	userid varchar2(50) NOT NULL PRIMARY KEY,
 	userpw varchar2(100) NOT NULL,
 	username varchar2(100) NOT NULL,
 	regdate date DEFAULT SYSDATE,
 	updatedate date DEFAULT SYSDATE,
-	enabled char(1),
-	PRIMARY KEY (userid)
+	enabled char(1) DEFAULT '1'
 );
 
 
